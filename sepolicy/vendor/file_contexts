@@ -1,0 +1,13 @@
+# file contexts
+
+## Audio filecontexts
+# vendor service
+/vendor/bin/hw/android\.hardware\.audio\.service\.mediatek         u:object_r:mtk_hal_audio_exec:s0
+/vendor/bin/audiocmdservice_atci                                   u:object_r:audiocmdservice_atci_exec:s0
+
+# Audio data files
+/data/vendor/audio(/.*)?            u:object_r:audio_vendor_data_file:s0
+
+# Platform
+/dev/snd(/.*)?		u:object_r:audio_device:s0
+
