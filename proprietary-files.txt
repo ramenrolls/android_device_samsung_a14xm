@@ -1626,6 +1626,7 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
+<<<<<<< HEAD
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
@@ -1882,3 +1883,39 @@ vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/init/vaultkeeper_common.rc
+
+# Tether Offload
+vendor/bin/hw/tetheroffloadservice
+vendor/bin/netdagent
+vendor/etc/init/netdagent.rc
+vendor/etc/init/tetheroffloadservice.rc
+vendor/lib64/libforkexecwrap.so
+vendor/lib64/libifcutils_mtk.so
+vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Wi-Fi
+vendor/bin/wlan_assistant
+vendor/bin/hw/wpa_supplicant
+vendor/bin/netdc
+vendor/bin/wifiver_info
+vendor/bin/wmt_launcher
+vendor/bin/wmt_loader
+vendor/bin/wpa_cli
+vendor/bin/ccci_mdinit
+vendor/bin/ccci_rpcd
+vendor/etc/init/wlan_assistant.rc
+vendor/etc/init/init.cccimdinit.rc
+vendor/etc/init/init.cccirpcd.rc
+vendor/etc/init/init.wlan_drv.rc
+vendor/etc/init/init.wmt_drv.rc
+vendor/etc/init/networksetting.rc
+vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
+
+## Wifi Firmware
+vendor/firmware/soc2_2_ram_wifi_1_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_1a_1_hdr.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_1a_1.bin
+vendor/firmware/WMT_SOC.cfg
+vendor/firmware/wifi.cfg
+
