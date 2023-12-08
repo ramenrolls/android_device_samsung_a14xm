@@ -125,3 +125,14 @@ persist.vendor.sys.fp.vendor=xinli-chipone-icnf7318AL
 ro.vendor.gps.chrdev=gps_drv
 ro.vendor.mtk_gps_support=1
 ro.vendor.mtk_log_hide_gps=2
+
+### Media
+# Media
+ro.vendor.mtk.c2.vdec.fmt.support.level=3
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_video_hevc_enc_support=1
+vendor.mtk.vdec.waitkeyframeforplay=9
+ro.vendor.mtk_mvpu_security_support=0
+ro.vendor.jpeg_decode_sw_opt=2
+ro.vendor.hdr10plus.enable=1
+media.c2.dmabuf.padding=3072
