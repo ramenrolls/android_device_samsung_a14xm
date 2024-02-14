@@ -96,3 +96,14 @@
 
 ## Vibrator
 /vibrator/bin/hw/vendor\.samsung\.hardware\.vibrator-service               u:object_r:hal_vibrator_default_exec:s0
+
+## Thermal
+/(vendor|system/vendor)/bin/thermal_manager                                        u:object_r:thermal_manager_exec:s0
+/(vendor|system/vendor)/bin/thermal_core u:object_r:thermal_core_exec:s0
+/(vendor|system/vendor)/bin/thermal_core64 u:object_r:thermal_core_exec:s0
+/(vendor|system/vendor)/bin/thermalloadalgod                                       u:object_r:thermalloadalgod_exec:s0
+
+/data/vendor/.tp(/.*)?              u:object_r:thermal_manager_data_file:s0
+/data/vendor/thermal(/.*)?          u:object_r:thermal_core_data_file:s0
+/dev/socket/thermal_socket(/.*)? u:object_r:thermal_socket:s0
+/dev/socket/thermal_hal_socket(/.*)? u:object_r:thermal_hal_socket:s0
