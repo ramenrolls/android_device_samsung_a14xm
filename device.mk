@@ -187,6 +187,13 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Power HAL
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
