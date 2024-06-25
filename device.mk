@@ -15,6 +15,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Declare as non AB device
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
+## A/B
+AB_OTA_UPDATER := false
+PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
+
 ## Audio HAL Server & Default Implementations
 PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
