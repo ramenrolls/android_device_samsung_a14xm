@@ -21,12 +21,19 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
+TARGET_USES_64_BIT_BINDER := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := a14xm
 TARGET_NO_BOOTLOADER := true
 
 # Display
 TARGET_SCREEN_DENSITY := 450
+TARGET_USES_GRALLOC4 := true
+
+# EGL facilitates OpenGL rendering by managing surfaces and contexts
+BOARD_EGL_CFG := $(DEVICE_PATH)/egl.cfg
+# It acts as bridge between render APIs and the platform's window manager
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 2
