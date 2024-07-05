@@ -1,0 +1,6 @@
+runtime_resource_overlay {
+    name: "TetheringConfigOverlayMT6833",
+    theme: "TetheringConfigOverlay",
+    sdk_version: "current",
+    vendor: true
+}
