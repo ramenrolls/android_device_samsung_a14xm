@@ -1,0 +1,9 @@
+service vendor.nfc_hal_service /vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
+    interface android.hardware.nfc@1.0::INfc default
+    interface android.hardware.nfc@1.1::INfc default
+    interface android.hardware.nfc@1.2::INfc default
+    class hal
+    oneshot
+    disabled
+    user nfc
+    group nfc net_bt_admin
