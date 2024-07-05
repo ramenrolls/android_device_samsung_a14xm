@@ -69,12 +69,14 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.3-impl:32
    
 PRODUCT_PACKAGES += \
-    libaudiofoundation.vendor \
-    libalsautils \
-    libnbaio_mono \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    audio.usb.default
+
+PRODUCT_PACKAGES += \
     libtinycompress \
-    libdynproc \
-    libhapticgenerator
+    libtinyxml \
+    tinymix
 
 PRODUCT_PACKAGES += \
     MtkInCallService
@@ -116,10 +118,14 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.allocator@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
-    libhwbinder.vendor \
-    android.hidl.allocator@1.0.vendor
+    libhwbinder \
+    libhwbinder.vendor
 
 # Health
 PRODUCT_PACKAGES += \
@@ -127,7 +133,17 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
 
+PRODUCT_PACKAGES += \
+    android.hardware.health-V1-ndk \
+    android.hardware.health@2.0
+
 # Input
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.mt6833
+
+PRODUCT_PACKAGES += \
+    libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/conf/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     $(LOCAL_PATH)/conf/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-goodix.idc
@@ -190,8 +206,14 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.device@3.6.vendor:64 \
-    android.hardware.camera.provider@2.6.vendor:64
+    android.hardware.camera.common@1.0.vendor \
+    android.hardware.camera.device@3.3.vendor \
+    android.hardware.camera.device@3.4.vendor \
+    android.hardware.camera.device@3.5.vendor \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.4.vendor \
+    android.hardware.camera.provider@2.5.vendor \
+    android.hardware.camera.provider@2.6.vendor \
 
 # ConsumerIr
 PRODUCT_PACKAGES += \
@@ -208,7 +230,9 @@ PRODUCT_VENDOR_PROPERTIES += ro.hardware.hwcomposer=mtk_common
 
 PRODUCT_PACKAGES += \
 	android.hardware.graphics.mapper@4.0-impl \
+    android.hardware.graphics.mapper@4.0.vendor \
 	android.hardware.graphics.allocator-V1-service \
+    android.hardware.graphics.common@1.2.vendor \
 
 # Mali Configuration Properties
 # b/221255664 prevents setting PROTECTED_MAX_CORE_COUNT=2
@@ -234,7 +258,8 @@ PRODUCT_VENDOR_PROPERTIES += ro.gfx.driver.0=com.mediatek.mt6833.gamedriver
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.composer@2.1-service
+    android.hardware.graphics.composer@2.1-service \
+    android.hardware.memtrack-service.mediatek-mali
 
 # Render API properties   
 PRODUCT_VENDOR_PROPERTIES += \
@@ -251,14 +276,50 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ######################
 
 # Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlayMT6833 \
+    FrameworksResOverlayMT6833 \
+    SettingsOverlayMT6833 \
+    TelephonyOverlayMT6833 \
+    TetheringConfigOverlayMT6833 \
+    WifiOverlayMT6833
+    
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := phone
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.mediatek-libperfmgr
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
+
+PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.0.vendor \
+    vendor.mediatek.hardware.mtkpower@1.1.vendor \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
+
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor \
+    android.hardware.power@1.1.vendor \
+    android.hardware.power@1.2.vendor \
+    android.hardware.power@1.3.vendor
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.mt6833
 ################################
 ### Radio ## Telephony ## RIL
 ################################
@@ -289,10 +350,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # GNSS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0.vendor \
+    android.hardware.gnss@1.1.vendor \
+    android.hardware.gnss@2.0.vendor \
+    android.hardware.gnss@2.1.vendor \
+    android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor \
-    android.hardware.gnss-V1-ndk.vendor \
-    android.hardware.gnss@2.1.vendor
+    android.hardware.gnss.visibility_control@1.0.vendor
     
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.radio.noril=no
@@ -311,6 +375,16 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # one SIM used for call, the other SIM is in standby mode
 # Receiving a call on the standby SIM
 # device will automatically switch to answer the call
+
+# IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
 
 ### Radio ## Telephony ## RIL ###
 #################################
@@ -365,6 +439,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/fstab.enableswap:$(TARGET_COPY_OUT_RAMDISK)/fstab.enableswap
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0.vendor \
+    android.hardware.sensors@2.0.vendor \
+    android.frameworks.sensorservice@1.0 \
+    android.frameworks.sensorservice@1.0.vendor
+
+PRODUCT_PACKAGES += \
+    libshim_sensors \
+    libsensorndkbridge
+
+# Shims
+PRODUCT_PACKAGES += \
+    libshim_audio \
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -377,7 +466,10 @@ PRODUCT_SOONG_NAMESPACES += \
 # Thermal  
 ################################
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.mediatek
+    android.hardware.thermal@1.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/conf/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
@@ -392,6 +484,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 	persist.sys.fuse=true \
 
 ## No FUSE BPF implementation
+
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.mediatek-legacy
 ####################################
 ## VIDEO
 ####################################
@@ -416,12 +512,23 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libdrm.vendor \
-    libutils-v32
+    libdrm
 
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey \
+
+PRODUCT_PACKAGES += \
+    libmockdrmcryptoplugin
+
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0.vendor \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2.vendor \
+    android.hardware.drm@1.3.vendor
 
 # OpenMAX IL
 PRODUCT_COPY_FILES += \
@@ -452,9 +559,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.uicc.xml
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/conf/nfc,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
 
 # WiFi
 PRODUCT_PACKAGES += \
