@@ -21,7 +21,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
-TARGET_USES_64_BIT_BINDER := true
+## Deprecated variable, mark for removal
+# TARGET_USES_64_BIT_BINDER := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := a14xm
@@ -35,28 +36,65 @@ TARGET_USES_GRALLOC4 := true
 BOARD_EGL_CFG := $(DEVICE_PATH)/egl.cfg
 # It acts as bridge between render APIs and the platform's window manager
 
-# Kernel
-BOARD_BOOTIMG_HEADER_VERSION := 2
-BOARD_KERNEL_BASE := 0x40078000
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 loop.max_part=7
-BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+####################
+## Kernel
+####################
+TARGET_LINUX_KERNEL_VERSION := 4.19
+TARGET_KERNEL_ARCH := arm64
+TARGET_KERNEL_HEADER_ARCH := arm64
+
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 loop.max_part=7 \
+			androidboot.hardware=mt6833 vmalloc=400M swiotlb=noforce \
+                        firmware_class.path=/vendor/firmware androidboot.secboot_fuse=0 \
+                        androidboot.board_id=S96901GA1 androidboot.em.model=SM-A146P \
+                        androidboot.init_fatal_reboot_target=recovery \
+                        nokaslr mtk_printk_ctrl.disable_uart=1 \
+                        androidboot.selinux=permissive \
+
+
 BOARD_KERNEL_IMAGE_NAME := Image
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := a14xm_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/a14xm
 
-# Kernel - prebuilt
-TARGET_FORCE_PREBUILT_KERNEL := true
-ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
-BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
-BOARD_INCLUDE_DTB_IN_BOOTIMG := 
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
-BOARD_KERNEL_SEPARATED_DTBO := 
+ifeq (yes,$(strip $(MTK_GMO_RAM_OPTIMIZE)))
+    #A-GO
+    MALLOC_SVELTE := true
 endif
+
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_KERNEL_SEPARATED_DTBO := true
+
+BOARD_KERNEL_PAGESIZE := 2048
+BOARD_KERNEL_BASE := 0x40078000
+BOARD_KERNEL_OFFSET := 0x00008000
+BOARD_RAMDISK_OFFSET := 0x11088000
+BOARD_KERNEL_TAGS_OFFSET := 0x07c08000
+BOARD_KERNEL_SECOND_OFFSET := 0x07c00000
+
+TARGET_FORCE_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+
+ifeq ($(strip $(MTK_GMO_ROM_OPTIMIZE)), yes)
+  PRODUCT_PROPERTY_OVERRIDES += ro.mtk_gmo_rom_optimize=1
+  ifeq ($(TARGET_BUILD_VARIANT), eng)
+    PRODUCT_PROPERTY_OVERRIDES += ro.lmk.debug=true
+  endif
+endif
+# Kernel Arguments - end
+#####################
+# Boot image 
+BOARD_BOOTIMG_HEADER_VERSION := 2
+ 
+BOARD_MKBOOTIMG_ARGS += --board SRPVH12A007
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
+BOARD_MKBOOTIMG_ARGS := --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -75,11 +113,7 @@ TARGET_BOARD_PLATFORM := mt6833
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
-TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
-TARGET_SYSTEM_DLKM_PROP += $(DEVICE_PATH)/system_dlkm.prop
-TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
-TARGET_ODM_DLKM_PROP += $(DEVICE_PATH)/odm_dlkm.prop
-TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/vendor_dlkm.prop
+
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.enableswap
