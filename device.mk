@@ -372,7 +372,13 @@ PRODUCT_COPY_FILES += \
 
 # Thermal  - end
 ################################
+# Use FUSE passthrough
+PRODUCT_PRODUCT_PROPERTIES += \
+	persist.sys.fuse.passthrough.enable=true \
+	sys.fuse.transcode_enabled \
+	persist.sys.fuse=true \
 
+## No FUSE BPF implementation
 ####################################
 ## VIDEO
 ####################################
