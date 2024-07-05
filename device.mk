@@ -112,6 +112,46 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/conf/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/conf/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
+
+##########################
+# Bluetooth 
+##########################
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth@1.1.vendor \
+    libbluetooth_audio_session
+
+PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
+    libbluetooth_audio_session
+
+# Bluetooth COD
+## Service Field: 0x5A -> 90
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.device.class_of_device=90,66,12
+## MINOR_CLASS: 0x0C -> 12 (Smart Phone)
+
+# Setting BT enabled profiles
+PRODUCT_PRODUCT_PROPERTIES += \
+    bluetooth.profile.a2dp.source.enabled?=true \
+    bluetooth.profile.avrcp.target.enabled?=true \
+    bluetooth.profile.gatt.enabled?=true \
+    bluetooth.profile.hfp.ag.enabled?=true \
+    bluetooth.profile.hid.device.enabled?=true \
+    bluetooth.profile.hid.host.enabled?=true \
+    bluetooth.profile.map.server.enabled?=true \
+    bluetooth.profile.opp.enabled?=true \
+    bluetooth.profile.pan.nap.enabled?=true \
+    bluetooth.profile.pan.panu.enabled?=true \
+    bluetooth.profile.pbap.server.enabled?=true \
+    bluetooth.profile.sap.server.enabled?=true \
+
+
+# Bluetooth - end
+##########################
+
 # ######################
 # GRAPHICS #
 # ######################
