@@ -173,7 +173,9 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # VINTF
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/conf/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/conf/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/conf/vintf/framework_compatibility_matrix.xml
 
 # Inherit the proprietary files
 include vendor/samsung/a14xm/BoardConfigVendor.mk
