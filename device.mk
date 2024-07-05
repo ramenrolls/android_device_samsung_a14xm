@@ -97,6 +97,13 @@ PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder.vendor \
+    android.hidl.allocator@1.0.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
@@ -112,7 +119,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/conf/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/conf/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/uinput-goodix.kl
 
-
+# Fingerprint antispoof property
+PRODUCT_PRODUCT_PROPERTIES +=\
+    persist.vendor.fingerprint.disable.fake.override=none
 ##########################
 # Bluetooth 
 ##########################
@@ -151,6 +160,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Bluetooth - end
 ##########################
+# Cgroup
+PRODUCT_COPY_FILES += \
+    system/core/libprocessgroup/profiles/cgroups_30.json:$(TARGET_COPY_OUT_VENDOR)/etc/cgroups.json \
 
 # ######################
 # GRAPHICS #
