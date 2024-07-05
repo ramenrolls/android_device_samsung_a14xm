@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 # Enable DeviceAsWebcam
 PRODUCT_VENDOR_PROPERTIES += \
     ro.usb.uvc.enabled=true
-    
+
 # Enable Dalvik Optimizations
 PRODUCT_DEXPREOPT_SPEED_APPS += SystemUI  # For AOSP
 
@@ -248,6 +248,62 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := phone
+
+################################
+### Radio ## Telephony ## RIL
+################################
+
+# Radio
+PRODUCT_PACKAGES += \
+    android.hardware.radio.config@1.3.vendor \
+    android.hardware.radio@1.6.vendor
+
+# Multi SIM(DSDS)
+SIM_COUNT := 2
+$(call soong_config_set,sim,sim_count,$(SIM_COUNT))
+SUPPORT_MULTI_SIM := true
+# Support NR
+SUPPORT_NR := true
+# Using IRadio 
+# Support SecureElement HAL for HIDL
+USE_SE_HIDL := true
+
+# FM
+PRODUCT_PACKAGES += FMRadio
+
+# RIL system props
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.default_network=26 \
+    vendor.rild.libpath=/vendor/lib64/libsec-ril.so \
+    vendor.rild.libargs=-d /dev/ttyC0 
+
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss.measurement_corrections@1.1.vendor \
+    android.hardware.gnss.visibility_control@1.0.vendor \
+    android.hardware.gnss-V1-ndk.vendor \
+    android.hardware.gnss@2.1.vendor
+    
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.radio.noril=no
+
+# No reboot on modem change
+PRODUCT_PRODUCT_PROPERTIES += \
+	persist.radio.reboot_on_modem_change=false
+
+# Default to DSDS
+PRODUCT_PRODUCT_PROPERTIES += \
+	persist.radio.multisim.config=dsds
+
+# DSDS - Dual SIM Dual Standby
+# device has two separate radio interfaces
+# one for each SIM 
+# one SIM used for call, the other SIM is in standby mode
+# Receiving a call on the standby SIM
+# device will automatically switch to answer the call
+
+### Radio ## Telephony ## RIL ###
+#################################
 
 # Rootdir
 PRODUCT_PACKAGES += \
