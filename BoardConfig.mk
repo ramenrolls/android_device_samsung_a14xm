@@ -102,6 +102,9 @@ ifeq ($(strip $(MTK_GMO_ROM_OPTIMIZE)), yes)
     PRODUCT_PROPERTY_OVERRIDES += ro.lmk.debug=true
   endif
 endif
+
+TARGET_KERNEL_CLANG_VERSION := r383902
+
 # Kernel Arguments - end
 #####################
 # Boot image 
