@@ -13,6 +13,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+
 # PostInstall Configuration
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
@@ -193,6 +194,19 @@ PRODUCT_VENDOR_PROPERTIES += \
 ## VIDEO 
 ####################################
 
+
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi-service \
+    hostapd \
+    wpa_supplicant
+
+PRODUCT_PACKAGES += \
+    libwifi-hal-wrapper
+
+PRODUCT_PACKAGES += \
+    android.hardware.tetheroffload.config@1.0.vendor \
+    android.hardware.tetheroffload.control@1.1.vendor
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/a14xm/a14xm-vendor.mk)
