@@ -132,7 +132,6 @@ ro.sys.usb.storage.type=mtp
 ro.system.build.version.sehi=3403
 ro.system.qb.id=80913388
 ro.vendor.customer_logpath=/data
-ro.vendor.have_aee_feature=1
 ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_telephony_add_on_policy=0

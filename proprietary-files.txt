@@ -2592,7 +2592,6 @@ vendor/bin/hw/camerahalserver
 vendor/bin/hw/interfaces.factoryInterface@1.0-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/tetheroffloadservice
-vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.face.jdm-service
@@ -2609,10 +2608,6 @@ vendor/bin/hw/vendor.samsung.hardware.vibrator-service
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
 vendor/bin/AgentTest
-vendor/bin/aee_aedv
-vendor/bin/aee_aedv64
-vendor/bin/aee_dumpstatev
-vendor/bin/aeev
 vendor/bin/applypatch
 vendor/bin/audiocmdservice_atci
 vendor/bin/autobt
@@ -3542,8 +3537,6 @@ vendor/etc/bstdualcamera/distortion_param_5.cfg
 vendor/etc/hyper/config_chipset.json
 vendor/etc/hyper/config_hyper_permission.json
 vendor/etc/hyper/config_vendor.json
-vendor/etc/init/aee_aedv.rc
-vendor/etc/init/aee_aedv64.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/etc/init/bootperf.rc
 vendor/etc/init/boringssl_self_test.rc
@@ -3590,7 +3583,6 @@ vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/etc/init/teegris_v4.rc
 vendor/etc/init/tetheroffloadservice.rc
 vendor/etc/init/vaultkeeper_common.rc
-vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/etc/init/vendor.samsung.hardware.biometrics.face.jdm-service.rc
@@ -3825,8 +3817,6 @@ vendor/etc/AbnormalDisplayLog_dynamic.xml
 vendor/etc/AudioLog_dynamic.xml
 vendor/etc/VideoLog_dynamic.xml
 vendor/etc/VideoStab_cam0.cfg
-vendor/etc/aee-commit
-vendor/etc/aee-config
 vendor/etc/armnn_app.config
 vendor/etc/audio_device.xml
 vendor/etc/audio_em.xml
@@ -4389,8 +4379,6 @@ vendor/lib64/libwpa_client.so
 vendor/lib64/libz_stable.so
 vendor/lib64/meta_wifi_data.so
 vendor/lib64/vendor.fpsensor.hardware.fpsensorhidlsvc@2.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.0.so
-vendor/lib64/vendor.mediatek.hardware.aee@1.1.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.ccap@1.0.so
