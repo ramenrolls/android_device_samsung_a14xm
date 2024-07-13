@@ -1,0 +1,184 @@
+import /vendor/etc/init/hw/init.sec.rc
+
+# MTK project .rc configure
+
+import /vendor/etc/init/hw/init.sec.rc
+
+on early-init
+    exec_background u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules trace_mmstat.ko
+    # softdog
+    chown root system /dev/watchdog1
+    chmod 0660 /dev/watchdog1
+    symlink /dev/watchdog1 /dev/softdog
+    write /dev/softdog 1 
+    
+on init
+    mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+    mkdir /storage/usbotg 0700 root root
+    write /sys/module/musb_hdrc/parameters/mu3d_force_on 1
+
+on post-fs-data
+
+#Camera
+    chmod 0660 /dev/MAINAF
+    chown system camera /dev/MAINAF
+
+    chmod 0660 /dev/MAINAF2
+    chown system camera /dev/MAINAF2
+
+    chmod 0660 /dev/SUBAF
+    chown system camera /dev/SUBAF
+
+    chmod 0660 /dev/GAF001AF
+    chown system camera /dev/GAF001AF
+
+    chmod 0660 /dev/DW9714AF
+    chown system camera /dev/DW9714AF
+
+    chmod 0660 /dev/LC898212AF
+    chown system camera /dev/LC898212AF
+
+    chmod 0660 /dev/BU64745GWZAF
+    chown system camera /dev/BU64745GWZAF
+
+#+bug584789,zhanghengyuan.wt,MODIFY,2020/12/31,chown enable_flashlight for factory test
+    chown system system /sys/devices/platform/flashlights_mt6360/enable_flashlight
+#-bug584789,zhanghengyuan.wt,MODIFY,2020/12/31,chown enable_flashlight for factory test
+#+bug584789,zhanghengyuan.wt,MODIFY,2021/3/8,Add Samsung flashlight file node
+    chown system system /sys/class/camera/flash/rear_flash
+    chmod 0777 /sys/class/camera/flash/rear_flash
+#-bug584789,zhanghengyuan.wt,MODIFY,2021/3/8,Add Samsung flashlight file node
+#+bug 682590 yaoguizhen.wt, ADD, 2021/9/1,  add for dual camera calibration .
+    mkdir /mnt/vendor/persist/camera  0777 cameraserver cameraserver
+    chmod 0664 /mnt/vendor/persist/camera/calib_result
+#-bug 682590 yaoguizhen.wt, ADD, 2021/9/1,  add for dual camera calibration .
+#SMB
+    chown system system /proc/smb/ScreenComm
+    chmod 0660 /proc/smb/ScreenComm
+
+    chmod 0660 /dev/spm
+    chown system system /dev/spm
+
+# add for fpsensor Fingerprint
+    chmod 0660 /dev/fpsensor
+    chown system system /dev/fpsensor
+
+#add for silead fingeprint
+    mkdir /data/vendor/silead 0660 system system
+    chown system system /dev/silead_fp
+    chmod 0660 /dev/silead_fp
+
+# add for fpc Fingerprint
+    chmod 0660 /dev/fpc1020
+    chown system system /dev/fpc1020
+    chown system system /sys/devices/platform/fpc1020_fp/irq
+
+    chown system radio /sys/class/fingerprint/fingerprint/adm
+    chmod 0444 /sys/class/fingerprint/fingerprint/adm
+
+#+bug 641202 zhengkanxiang.wt, add, 2021/4/8,  add for MST SS pay function test
+     chown system system /sys/class/mstldo/mst_drv/transmit
+#-bug 641202 zhengkanxiang.wt, add, 2021/4/8,  add for MST SS pay function test
+
+#Battery
+    chmod 0666 /sys/class/power_supply/battery/batt_full_capacity
+    chmod 0666 /sys/class/power_supply/battery/batt_slate_mode
+    chmod 0666 /sys/class/power_supply/battery/batt_soc_rechg
+    chmod 0666 /sys/class/sec/switch/afc_disable
+
+#For sar-sensor
+#Allow access to sar sensors device attributes
+    chown system system /sys/class/capsense/ch0_cap_diff_dump
+    chown system system /sys/class/capsense/ch2_cap_diff_dump
+    chown system system /sys/class/capsense/ch3_cap_diff_dump
+    chown system system /sys/class/capsense/power_enable
+    chown system system /sys/class/capsense/user_test
+    chmod 0660 /sys/class/capsense/ch0_cap_diff_dump
+    chmod 0660 /sys/class/capsense/ch2_cap_diff_dump
+    chmod 0660 /sys/class/capsense/ch3_cap_diff_dump
+    chmod 0660 /sys/class/capsense/power_enable
+    chmod 0660 /sys/class/capsense/user_test
+
+    chown system system /sys/class/sensors/grip_sensor_wifi/enable
+    chown system system /sys/class/sensors/grip_sensor_wifi/poll_delay
+    chown system system /sys/class/sensors/grip_sensor_wifi/enable_wakeup
+    chmod 0660 /sys/class/sensors/grip_sensor_wifi/enable
+    chmod 0660 /sys/class/sensors/grip_sensor_wifi/poll_delay
+    chmod 0660 /sys/class/sensors/grip_sensor_wifi/enable_wakeup
+
+    chown system system /sys/class/sensors/grip_sensor_sub/enable
+    chown system system /sys/class/sensors/grip_sensor_sub/poll_delay
+    chown system system /sys/class/sensors/grip_sensor_sub/enable_wakeup
+    chmod 0660 /sys/class/sensors/grip_sensor_sub/enable
+    chmod 0660 /sys/class/sensors/grip_sensor_sub/poll_delay
+    chmod 0660 /sys/class/sensors/grip_sensor_sub/enable_wakeup
+
+    chown system system /sys/class/sensors/grip_sensor/enable
+    chown system system /sys/class/sensors/grip_sensor/poll_delay
+    chown system system /sys/class/sensors/grip_sensor/enable_wakeup
+    chmod 0660 /sys/class/sensors/grip_sensor/enable
+    chmod 0660 /sys/class/sensors/grip_sensor/poll_delay
+    chmod 0660 /sys/class/sensors/grip_sensor/enable_wakeup
+    
+    chown system system  /sys/class/input/input5/enable
+    chmod 0660 /sys/class/input/input5/enable
+    chown system system  /sys/class/input/input3/enable
+    chmod 0660 /sys/class/input/input3/enable
+    chown system system  /sys/class/input/input2/enable
+    chmod 0660 /sys/class/input/input2/enable
+    chown system system  /sys/class/input/input4/enable
+    chmod 0660 /sys/class/input/input4/enable
+
+    chown system system  /dev/input/event5
+    chmod 0660 /dev/input/event5
+    chown system system  /dev/input/event3
+    chmod 0660 /dev/input/event3
+    chown system system  /dev/input/event2
+    chmod 0660 /dev/input/event2
+    chown system system  /dev/input/event4
+    chmod 0660 /dev/input/event4
+
+on init
+    # Refer to http://source.android.com/devices/tech/storage/index.html
+    # It said, "Starting in Android 4.4, multiple external storage devices are surfaced to developers through
+    #           Context.getExternalFilesDirs(), Context.getExternalCacheDirs(), and Context.getObbDirs().
+    #           External storage devices surfaced through these APIs must be a semi-permanent part of the device (such as an SD card slot in a battery compartment).
+    #           Developers expect data stored in these locations to be available over long periods of time."
+    # Therefore, if the target doesn't support sd hot-plugging (Ex: the SD card slot in a battery compartment), we need to export SECONDARY_STORAGE in 'boot' section
+    #
+    # export SECONDARY_STORAGE /storage/sdcard1
+
+service fuse_usbotg /system/bin/sdcard -u 1023 -g 1023 -w 1023 -d /mnt/media_rw/usbotg /storage/usbotg
+    class late_start
+    disabled
+
+#+bug 770477,gwq.wt,add,2022/07/26,add widevine and attest key check property
+service check_keymaster /vendor/bin/check_keymaster
+    class core
+    user system
+    group system
+    oneshot
+    disabled
+    #seclabel u:r:check_keymaster:s0
+
+service check_keybox /vendor/bin/check_keybox
+    class core
+    user system
+    group system
+    oneshot
+    disabled
+    #seclabel u:r:check_keybox:s0
+
+on property:sys.boot_completed=1
+    start check_keymaster
+    start check_keybox
+#-bug 770477,gwq.wt,add,2022/07/26,add widevine and attest key check property
+
+# start mmstat
+on property:sys.boot_completed=1
+    mkdir /sys/kernel/tracing/instances/mmstat 711
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
+    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 16
+    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
+
