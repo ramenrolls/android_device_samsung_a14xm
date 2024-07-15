@@ -456,10 +456,9 @@ PRODUCT_SOONG_NAMESPACES += \
 # Thermal  
 ################################
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl
-
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0.vendor
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@2.0.vendor \
+    android.hardware.thermal-service.mediatek \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/conf/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
@@ -479,7 +478,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.mediatek-legacy \
     android.hardware.usb.gadget-service.mediatek
-    
+
 ####################################
 ## VIDEO
 ####################################
