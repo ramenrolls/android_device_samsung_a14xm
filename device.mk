@@ -34,7 +34,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.m
 # PostInstall Configuration
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    POSTINSTALL_PATH_system=system/bin/mtk_plpath_utils \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
@@ -162,6 +162,7 @@ $(call inherit-product-if-exists, frameworks/base/data/fonts/openfont/fonts.mk)
 # Fingerprint antispoof property
 PRODUCT_PRODUCT_PROPERTIES +=\
     persist.vendor.fingerprint.disable.fake.override=none
+
 ##########################
 # Bluetooth 
 ##########################
@@ -234,12 +235,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator-V1-service \
     android.hardware.graphics.common@1.2.vendor \
 
-# Mali Configuration Properties
-# b/221255664 prevents setting PROTECTED_MAX_CORE_COUNT=2
-PRODUCT_VENDOR_PROPERTIES += \
-	vendor.mali.base_protected_tls_max=67108864 \
-	vendor.mali.platform_agt_frequency_khz=24576
-
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
 	frameworks/native/data/etc/android.hardware.vulkan.version-1_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
@@ -251,8 +246,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_VENDOR_PROPERTIES += \
 	ro.hardware.vulkan = mali \
-    ro.hardware.egl = meow \
-    ro.opengles.version=196610 \
+	ro.hardware.egl = meow \
+	ro.opengles.version=196610 \
 
 PRODUCT_VENDOR_PROPERTIES += ro.gfx.driver.0=com.mediatek.mt6833.gamedriver 
 
@@ -335,7 +330,7 @@ $(call soong_config_set,sim,sim_count,$(SIM_COUNT))
 SUPPORT_MULTI_SIM := true
 # Support NR
 SUPPORT_NR := true
-# Using IRadio 
+# Using IRadio #
 # Support SecureElement HAL for HIDL
 USE_SE_HIDL := true
 
@@ -381,10 +376,7 @@ PRODUCT_BOOT_JARS += \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
-    mediatek-ims-common \
-    mediatek-telecom-common \
-    mediatek-telephony-base \
-    mediatek-telephony-common
+
 
 ### Radio ## Telephony ## RIL ###
 #################################
@@ -407,7 +399,6 @@ PRODUCT_PACKAGES += \
 # Rootdir
 PRODUCT_PACKAGES += \
     init.insmod.sh \
-    install-recovery.sh \
 
 PRODUCT_PACKAGES += \
     fstab.enableswap \
