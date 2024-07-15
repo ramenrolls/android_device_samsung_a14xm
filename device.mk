@@ -450,7 +450,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/mediatek \
-    hardware/samsung
 
 ################################
 # Thermal  
