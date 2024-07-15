@@ -477,7 +477,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.mediatek-legacy
+    android.hardware.usb-service.mediatek-legacy \
+    android.hardware.usb.gadget-service.mediatek
+    
 ####################################
 ## VIDEO
 ####################################
@@ -555,7 +557,8 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.mediatek
+    android.hardware.vibrator-service.mediatek \
+
 
 # WiFi
 PRODUCT_PACKAGES += \
