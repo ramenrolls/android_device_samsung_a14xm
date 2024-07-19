@@ -1,4 +1,9 @@
-Build.BRAND=MTK
+# Audio
+ro.audio.silent=0
+ro.audio.spatializer_enabled=true
+ro.audio.usb.period_us=16000
+
+# Bluetooth
 bluetooth.profile.a2dp.source.enabled=true
 bluetooth.profile.asha.central.enabled=false
 bluetooth.profile.avrcp.target.enabled=true
@@ -13,6 +18,30 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 bluetooth.profile.sap.server.enabled=true
+
+# Camera
+vendor.camera.aux.packagelist=android.camera.cts
+
+# Display
+debug.sf.auto_latch_unsignaled=false
+debug.sf.enable_gl_backpressure=0
+debug.sf.enable_transaction_tracing=false
+debug.sf.latch_unsignaled=true
+debug.sf.predict_hwc_composition_strategy=0
+ro.opengles.version=196610
+
+# Media
+debug.stagefright.c2inputsurface=-1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Wi-Fi
+ro.wifi.channels=
+wifi.direct.interface=p2p0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+
+# Miscellaneous
+Build.BRAND=MTK
 com.samsung.speg.prelauncher.disable=true
 dalvik.vm.appimageformat=lz4
 dalvik.vm.dex2oat-Xms=64m
@@ -39,18 +68,11 @@ dalvik.vm.usap_refill_threshold=1
 dalvik.vm.useartservice=true
 dalvik.vm.usejit=true
 debug.atrace.tags.enableflags=0
-debug.sf.auto_latch_unsignaled=false
-debug.sf.enable_gl_backpressure=0
-debug.sf.enable_transaction_tracing=false
-debug.sf.latch_unsignaled=true
-debug.sf.predict_hwc_composition_strategy=0
-debug.stagefright.c2inputsurface=-1
 log.tag.ClatdController=D
 log.tag.ConnectivityManager=D
 log.tag.ConnectivityService=D
 log.tag.IptablesRestoreController=D
 log.tag.NetworkLogger=D
-media.stagefright.thumbnail.prefer_hw_codecs=true
 mediatek.wlan.ctia=0
 net.bt.name=Android
 persist.log.level=0xFFFFFFFF
@@ -86,13 +108,10 @@ pm.dexopt.shared=speed
 qemu.hw.mainkeys=0
 ro.actionable_compatible_property.enabled=true
 ro.allow.mock.location=0
-ro.audio.silent=0
-ro.audio.spatializer_enabled=true
-ro.audio.usb.period_us=16000
 ro.base_build=noah
 ro.binary.type=user
 ro.build.2ndbrand=false
-ro.build.PDA=A146PXXU7DXE1
+ro.build.PDA=A146PXXS8DXF1
 ro.build.changelist=28693178
 ro.build.display_build_number=true
 ro.build.official.developer=false
@@ -120,7 +139,6 @@ ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 ro.mtk_perf_simple_start_win=1
 ro.oem_unlock_supported=1
-ro.opengles.version=196610
 ro.postinstall.fstab.prefix=/system
 ro.product.property_source_order=odm,vendor,product,system
 ro.product_ship=true
@@ -130,14 +148,14 @@ ro.sys.usb.charging.only=yes
 ro.sys.usb.mtp.whql.enable=0
 ro.sys.usb.storage.type=mtp
 ro.system.build.version.sehi=3403
-ro.system.qb.id=80913388
+ro.system.qb.id=81829143
 ro.vendor.customer_logpath=/data
+ro.vendor.have_aee_feature=1
 ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_telephony_add_on_policy=0
 ro.vendor.qti.va_aosp.support=1
 ro.vendor.system.mtk_mapi_support=1
-ro.wifi.channels=
 ro.zygote.preload.enable=0
 security.perf_harden=1
 sys.hqm.support=true
@@ -146,9 +164,5 @@ sys.ipo.pwrdncap=2
 vendor.af.dynamic.sleeptime.enable=true
 vendor.af.pausewait.enable=false
 vendor.af.threshold.src_and_effect_count=5
-vendor.camera.aux.packagelist=android.camera.cts
 vendor.mtk_thumbnail_optimization=true
 vendor.rild.libargs=-d /dev/ttyC0
-wifi.direct.interface=p2p0
-wifi.interface=wlan0
-wifi.tethering.interface=ap0
