@@ -175,7 +175,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
-    libbluetooth_audio_session
 
 # Bluetooth COD
 ## Service Field: 0x5A -> 90
