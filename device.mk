@@ -79,7 +79,7 @@ PRODUCT_PACKAGES += \
     tinymix
 
 PRODUCT_PACKAGES += \
-    MtkInCallService
+    MtkInCallService \
     PowerOffAlarm
     
 PRODUCT_COPY_FILES += \
