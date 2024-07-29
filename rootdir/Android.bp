@@ -11,12 +11,6 @@ sh_binary {
     vendor: true,
 }
 
-sh_binary {
-    name: "install-recovery.sh",
-    src: "bin/install-recovery.sh",
-    vendor: true,
-}
-
 // Init configuration files
 prebuilt_etc {
     name: "factory_init.connectivity.common.rc",
