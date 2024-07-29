@@ -144,8 +144,8 @@ TARGET_COPY_OUT_PRODUCT := product
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Init Recovery Module
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit
-TARGET_RECOVERY_DEVICE_MODULES := libinit
+TARGET_INIT_VENDOR_LIB := libinit_a14xm
+TARGET_RECOVERY_DEVICE_MODULES := libinit_a14xm
 
 # Reserve Space for GMS Build
 ifneq ($(WITH_GMS),true)

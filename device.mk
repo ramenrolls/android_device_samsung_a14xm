@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health-V1-ndk \
     android.hardware.health@2.0
 
+# Init 
+PRODUCT_PACKAGES += \
+    libinit_a14xm
+
 # Input
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.mt6833
