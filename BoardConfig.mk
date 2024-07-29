@@ -188,9 +188,9 @@ VENDOR_SECURITY_PATCH := 2024-04-01
 
 BOARD_MTK_SEPOLICY_IS_LEGACY := true
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
+BOARD_VENDOR_SEPOLICY_DIRS += device/samsung/a14xm/sepolicy/vendor
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += device/samsung/a14xm/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += device/samsung/a14xm/sepolicy/public
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
