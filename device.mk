@@ -339,8 +339,8 @@ USE_SE_HIDL := true
 
 # FM
 PRODUCT_PACKAGES += \
-	FMRadio \
-	libfmjni
+    FMRadio \
+    libfmjni \
 
 # RIL system props
 PRODUCT_PROPERTY_OVERRIDES += \
