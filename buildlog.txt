@@ -1,0 +1,226 @@
+16:47:34 ************************************************************
+16:47:34 You are building on a machine with 15GB of RAM
+16:47:34 
+16:47:34 The minimum required amount of free memory is around 16GB,
+16:47:34 and even with that, some configurations may not work.
+16:47:34 
+16:47:34 If you run into segfaults or other errors, try reducing your
+16:47:34 -j value.
+16:47:34 ************************************************************
+Running product configuration...
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=14
+LINEAGE_VERSION=21.0-20240809-UNOFFICIAL-a14xm
+PRODUCT_INCLUDE_TAGS=com.android.mainline mainline_module_prebuilt_nightly
+TARGET_PRODUCT=lineage_a14xm
+TARGET_BUILD_VARIANT=eng
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=generic
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.15.0-117-generic-x86_64-Ubuntu-20.04.6-LTS
+HOST_CROSS_OS=windows
+BUILD_ID=AP2A.240705.005
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=device/samsung/a14xm hardware/google/interfaces hardware/google/pixel hardware/mediatek vendor/samsung/a14xm
+============================================
+[ 50% 1/2] regenerate globs shard 241 of 1024
+No need to regenerate ninja file
+No need to regenerate ninja file
+No need to regenerate ninja file
+Starting ninja...
+[  0% 2/30138] //frameworks/base/packages/services/Proxy:ProxyHandler align [common]
+[  0% 3/30138] //frameworks/base/packages/SystemUI/compose/scene:PlatformComposeSceneTransitionLayout merge aconfig files [common]
+[  0% 4/30138] //frameworks/base/packages/SystemUI/compose/scene:PlatformComposeSceneTransitionLayout merge aconfig files [common]
+[  0% 5/30138] //frameworks/base/packages/PrintSpooler:PrintSpooler align [common]
+[  0% 6/30138] //frameworks/base/packages/PrintRecommendationService:PrintRecommendationService align [common]
+[  0% 7/30138] //frameworks/base/packages/PrintRecommendationService:PrintRecommendationService merge assets from dependencies [common]
+[  0% 8/30138] //packages/apps/QuickAccessWallet:QuickAccessWallet align [common]
+[  0% 9/30138] //packages/modules/Permission/SafetyCenter/Resources:SafetyCenterResourcesShared merge aconfig files [common apex30]
+[  0% 10/30138] //frameworks/libs/gsma_services/satellite_client:SatelliteClient raw repackaging.txt [common]
+[  0% 11/30138] //packages/apps/Recorder/app:Recorder align [common]
+[  0% 12/30138] //packages/modules/AdServices/sdksandbox/SdkSandbox:SdkSandbox-java-lib merge aconfig files [common apex33]
+[  0% 13/30138] //packages/apps/SecureElement:SecureElement align [common]
+[  0% 14/30138] //packages/apps/Trebuchet:QuickstepResLib license metadata [common]
+[  0% 15/30138] //packages/apps/Recorder/app/libs:Recorder_com.google.android.material_material-nodeps license metadata [common]
+[  0% 16/30138] //frameworks/base/packages/SystemUI:ReleaseJavaFiles license metadata
+[  0% 17/30138] //packages/apps/Settings:Settings-change-ids license metadata [common]
+[  0% 18/30138] //frameworks/base/packages/SettingsLib/search:SettingsLib-annotation-processor license metadata [linux_glibc common]
+[  0% 19/30138] cp out/soong/.intermediates/external/roboto-fonts/Roboto-Regular.ttf/android_arm64_armv8-a/Roboto-Regular.ttf
+[  0% 20/30138] //frameworks/base/packages/SettingsLib/search:SettingsLib-search license metadata [common]
+[  0% 21/30138] //frameworks/base/packages/SettingsLib/ActionBarShadow:SettingsLibActionBarShadow merge aconfig files [common]
+[  0% 22/30138] //frameworks/base/packages/SettingsLib/ActionButtonsPreference:SettingsLibActionButtonsPreference merge aconfig files [common]
+[  0% 23/30138] //frameworks/base/packages/SettingsLib/AdaptiveIcon:SettingsLibAdaptiveIcon merge aconfig files [common]
+[  0% 24/30138] //packages/apps/SettingsIntelligence:SettingsIntelligence align [common]
+[  0% 25/30138] //frameworks/base/packages/SettingsLib/ActionButtonsPreference:SettingsLibActionButtonsPreference merge aconfig files [common]
+[  0% 26/30138] //frameworks/base/packages/SettingsLib/BannerMessagePreference:SettingsLibBannerMessagePreference merge aconfig files [common]
+[  0% 27/30138] //frameworks/base/packages/PrintSpooler:PrintSpooler merge assets from dependencies [common]
+[  0% 28/30138] //frameworks/base/packages/SettingsLib/AdaptiveIcon:SettingsLibAdaptiveIcon merge aconfig files [common]
+[  0% 29/30138] //frameworks/base/packages/SettingsLib/AppPreference:SettingsLibAppPreference merge aconfig files [common]
+[  0% 30/30138] //frameworks/base/packages/SettingsLib/AppPreference:SettingsLibAppPreference merge aconfig files [common]
+[  0% 31/30138] //frameworks/base/packages/SettingsLib/BannerMessagePreference:SettingsLibBannerMessagePreference merge aconfig files [common]
+[  0% 32/30138] //frameworks/base/packages/SettingsLib/BarChartPreference:SettingsLibBarChartPreference merge aconfig files [common]
+[  0% 33/30138] //frameworks/base/packages/SettingsLib/BarChartPreference:SettingsLibBarChartPreference merge aconfig files [common]
+[  0% 34/30138] //frameworks/base/packages/SettingsLib/ButtonPreference:SettingsLibButtonPreference merge aconfig files [common]
+[  0% 35/30138] //frameworks/base/packages/SettingsLib/ButtonPreference:SettingsLibButtonPreference merge aconfig files [common]
+[  0% 36/30138] //frameworks/base/packages/SettingsLib/CollapsingToolbarBaseActivity:SettingsLibCollapsingToolbarBaseActivity merge aconfig files [common]
+[  0% 37/30138] //frameworks/base/packages/SettingsLib/DataStore:SettingsLibDataStore license metadata [common]
+[  0% 38/30138] //frameworks/base/packages/SettingsLib/DeviceStateRotationLock:SettingsLibDeviceStateRotationLock merge aconfig files [common]
+[  0% 39/30138] //frameworks/base/packages/SettingsLib/DisplayUtils:SettingsLibDisplayUtils merge aconfig files [common]
+[  0% 40/30138] //frameworks/base/packages/SettingsLib/EmergencyNumber:SettingsLibEmergencyNumber merge aconfig files [common]
+[  0% 41/30138] //frameworks/base/packages/SettingsLib/DeviceStateRotationLock:SettingsLibDeviceStateRotationLock merge aconfig files [common]
+[  0% 42/30138] //frameworks/base/packages/SettingsLib/DisplayUtils:SettingsLibDisplayUtils merge aconfig files [common]
+[  0% 43/30138] //frameworks/base/packages/SettingsLib/EntityHeaderWidgets:SettingsLibEntityHeaderWidgets merge aconfig files [common]
+[  0% 44/30138] //frameworks/base/packages/SettingsLib/EntityHeaderWidgets:SettingsLibEntityHeaderWidgets merge aconfig files [common]
+[  0% 45/30138] //frameworks/base/packages/SettingsLib/FooterPreference:SettingsLibFooterPreference merge aconfig files [common]
+[  0% 46/30138] //frameworks/base/packages/SettingsLib/HelpUtils:SettingsLibHelpUtils merge aconfig files [common]
+[  0% 47/30138] //frameworks/base/packages/SettingsLib/IllustrationPreference:SettingsLibIllustrationPreference merge aconfig files [common]
+[  0% 48/30138] //frameworks/base/packages/SettingsLib/IllustrationPreference:SettingsLibIllustrationPreference merge aconfig files [common]
+[  0% 49/30138] //frameworks/base/packages/SettingsLib/LayoutPreference:SettingsLibLayoutPreference merge aconfig files [common]
+[  0% 50/30138] //frameworks/base/packages/SettingsLib/FooterPreference:SettingsLibFooterPreference merge aconfig files [common]
+[  0% 51/30138] //frameworks/base/packages/SettingsLib/MainSwitchPreference:SettingsLibMainSwitchPreference merge aconfig files [common]
+[  0% 52/30138] //frameworks/base/packages/SettingsLib/ProfileSelector:SettingsLibProfileSelector merge aconfig files [common]
+[  0% 53/30138] //frameworks/base/packages/SettingsLib/LayoutPreference:SettingsLibLayoutPreference merge aconfig files [common]
+[  0% 54/30138] //frameworks/base/packages/SettingsLib/ProfileSelector:SettingsLibProfileSelector merge aconfig files [common apex30]
+[  0% 55/30138] //frameworks/base/packages/SettingsLib/MainSwitchPreference:SettingsLibMainSwitchPreference merge aconfig files [common]
+[  0% 56/30138] //frameworks/base/packages/SettingsLib/ProfileSelector:SettingsLibProfileSelector merge aconfig files [common]
+[  0% 57/30138] //frameworks/base/packages/SettingsLib/ProgressBar:SettingsLibProgressBar merge aconfig files [common]
+[  0% 58/30138] //frameworks/base/packages/SettingsLib/RestrictedLockUtils:SettingsLibRestrictedLockUtils merge aconfig files [common]
+[  0% 59/30138] //frameworks/base/packages/SettingsLib/SearchWidget:SettingsLibSearchWidget merge aconfig files [common]
+[  0% 60/30138] //frameworks/base/packages/SettingsLib/ProfileSelector:SettingsLibProfileSelector merge aconfig files [common apex30]
+[  0% 61/30138] //frameworks/base/packages/SettingsLib/SelectorWithWidgetPreference:SettingsLibSelectorWithWidgetPreference merge aconfig files [common]
+[  0% 62/30138] //frameworks/base/packages/SettingsLib/SettingsSpinner:SettingsLibSettingsSpinner merge aconfig files [common]
+[  0% 63/30138] //frameworks/base/packages/SettingsLib/TopIntroPreference:SettingsLibTopIntroPreference merge aconfig files [common]
+[  0% 64/30138] //frameworks/base/packages/SettingsLib/SelectorWithWidgetPreference:SettingsLibSelectorWithWidgetPreference merge aconfig files [common]
+[  0% 65/30138] //frameworks/base/packages/SettingsLib/SettingsSpinner:SettingsLibSettingsSpinner merge aconfig files [common]
+[  0% 66/30138] //frameworks/base/packages/SettingsLib/TopIntroPreference:SettingsLibTopIntroPreference merge aconfig files [common]
+[  0% 67/30138] //frameworks/base/packages/SettingsLib/TwoTargetPreference:SettingsLibTwoTargetPreference merge aconfig files [common]
+[  0% 68/30138] //frameworks/base/packages/SettingsLib/UsageProgressBarPreference:SettingsLibUsageProgressBarPreference merge aconfig files [common]
+[  0% 69/30138] //frameworks/base/packages/SettingsLib/TwoTargetPreference:SettingsLibTwoTargetPreference merge aconfig files [common]
+[  0% 70/30138] //frameworks/base/packages/SettingsLib/UsageProgressBarPreference:SettingsLibUsageProgressBarPreference merge aconfig files [common]
+[  0% 71/30138] //frameworks/base/packages/SharedStorageBackup:SharedStorageBackup align [common]
+[  0% 72/30138] //frameworks/base/packages/SettingsProvider:SettingsProvider align [common]
+[  0% 73/30138] //frameworks/base/packages/Shell:Shell align [common]
+[  0% 74/30138] //frameworks/base/packages/SimAppDialog:SimAppDialog align [common]
+[  0% 75/30138] //frameworks/base/packages/SettingsLib/SpaPrivileged:SpaPrivilegedLib license metadata [common]
+[  0% 76/30138] //frameworks/base/packages/SoundPicker:SoundPicker align [common]
+[  0% 77/30138] //frameworks/base/packages/SimAppDialog:SimAppDialog merge assets from dependencies [common]
+[  0% 78/30138] //frameworks/base/packages/Shell:Shell merge assets from dependencies [common]
+[  0% 79/30138] //frameworks/base/packages/StatementService:StatementService align [common]
+[  0% 80/30138] //frameworks/base/packages/SoundPicker:SoundPicker merge assets from dependencies [common]
+[  0% 81/30138] //packages/apps/Settings:Settings align [common]
+[  0% 82/30138] //frameworks/base/packages/SystemUI:SystemUI-proto license metadata [common]
+[  0% 83/30138] //frameworks/base/packages/StatementService:StatementService merge assets from dependencies [common]
+[  0% 84/30138] //frameworks/base/packages/SystemUI:SystemUI-res license metadata [common]
+[  0% 85/30138] //frameworks/base/packages/SystemUI:SystemUI-tags license metadata [common]
+[  0% 86/30138] //packages/apps/Seedvault:Seedvault align [common]
+[  0% 87/30138] //packages/apps/Stk:Stk align [common]
+[  0% 88/30138] //packages/apps/StorageManager:StorageManager align [common]
+[  0% 89/30138] //packages/apps/Tag:Tag merge assets from dependencies [common]
+[  0% 90/30138] //packages/apps/Stk:Stk merge assets from dependencies [common]
+[  0% 91/30138] //packages/apps/Tag:Tag align [common]
+[  0% 92/30138] //packages/services/Telecomm:Telecom merge assets from dependencies [common]
+[  0% 93/30138] //packages/modules/Connectivity/Tethering:TetheringApiCurrentLib merge aconfig files [common apex30]
+[  0% 94/30138] //packages/apps/ThemePicker:ThemePickerOverridesLib license metadata [common]
+[  0% 95/30138] //packages/modules/Connectivity/Tethering:TetheringApiCurrentLib merge aconfig files [common apex30]
+[  0% 96/30138] //packages/apps/ThemePicker/themes:ThemesStub aapt2 compile packages/apps/ThemePicker/themes/res 2 [common]
+[  0% 97/30138] //packages/services/Telecomm:Telecom align [common]
+[  0% 98/30138] //packages/apps/Traceur:Traceur align [common]
+[  0% 99/30138] //packages/apps/Updater/app:Updater align [common]
+[  0% 100/30138] //packages/providers/UserDictionaryProvider:UserDictionaryProvider align [common]
+[  0% 101/30138] //frameworks/base/packages/VpnDialogs:VpnDialogs align [common]
+[  0% 102/30138] //packages/apps/ThemePicker/themes:ThemesStub aapt2 compile packages/apps/ThemePicker/themes/res [common]
+[  0% 103/30138] //frameworks/base/packages/SystemUI:SystemUI align [common]
+[  0% 104/30138] //frameworks/base/packages/WallpaperBackup:WallpaperBackup align [common]
+[  0% 105/30138] //frameworks/opt/net/wifi/libs/WifiTrackerLib:WifiTrackerLib license metadata [common]
+[  0% 106/30138] //frameworks/opt/net/wifi/libs/WifiTrackerLib:WifiTrackerLibRes merge aconfig files [common]
+[  0% 107/30138] //packages/apps/WallpaperPicker2:WallpaperPicker2Lib merge aconfig files [common]
+[  0% 108/30138] //frameworks/opt/net/wifi/libs/WifiTrackerLib:WifiTrackerLibRes merge aconfig files [common]
+[  0% 109/30138] //frameworks/base/libs/WindowManager/Shell:WindowManager-Shell license metadata [common]
+[  0% 110/30138] //frameworks/base/cmds/abx:abx align [common]
+[  0% 111/30138] cp out/soong/.intermediates/frameworks/base/cmds/abx/abx2xml/android_arm64_armv8-a/abx2xml
+[  0% 112/30138] //packages/apps/ThemePicker:ThemePicker align [common]
+[  0% 113/30138] //packages/apps/Settings/aconfig:accessibility_settings_flags_lib license metadata [common]
+[  0% 114/30138] //packages/apps/ManagedProvisioning:aconfig_managed_provisioning_flags_lib merge aconfig files [common]
+[  0% 115/30138] //packages/apps/Trebuchet:TrebuchetQuickStep align [common]
+[  0% 116/30138] //packages/apps/Settings/aconfig:aconfig_settings_flags_lib license metadata [common]
+[  0% 117/30138] //frameworks/av/media/aconfig:aconfig_mediacodec_flags_c_lib static link aconfig_mediacodec_flags_c_lib.a [arm]
+[  0% 118/30138] //frameworks/av/media/aconfig:aconfig_mediacodec_flags_c_lib static link aconfig_mediacodec_flags_c_lib.a
+[  0% 119/30138] //packages/apps/SimpleDeviceConfig:SimpleDeviceConfig jarjar [common]
+[  0% 120/30138] //packages/apps/Traceur:Traceur convert to binary [common]
+[  0% 121/30138] //hardware/mediatek/PowerOffAlarm:libjni_poweroffalarm clang++ jni/RtcDriver.cpp [arm]
+FAILED: out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/RtcDriver.o
+PWD=/proc/self/cwd prebuilts/clang/host/linux-x86/clang-r510928/bin/clang++ -c -mthumb -Os -fomit-frame-pointer -mllvm -enable-shrink-wrap=false -O2 -Wall -Wextra -Winit-self -Wpointer-arith -Wunguarded-availability -Werror=date-time -Werror=int-conversion -Werror=pragma-pack -Werror=pragma-pack-suspicious-include -Werror=sizeof-array-div -Werror=string-plus-int -Werror=unreachable-code-loop-increment -Wno-error=deprecated-declarations -Wno-c99-designator -Wno-gnu-folding-constant -Wno-inconsistent-missing-override -Wno-error=reorder-init-list -Wno-reorder-init-list -Wno-sign-compare -Wno-unused -DANDROID -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -D__ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ -faddrsig -fdebug-default-version=5 -fcolor-diagnostics -ffp-contract=off -fno-exceptions -fno-strict-aliasing -fmessage-length=0 -gsimple-template-names -gz=zstd -no-canonical-prefixes -fdebug-prefix-map=/proc/self/cwd= -ftrivial-auto-var-init=zero -g -ffunction-sections -fdata-sections -fno-short-enums -funwind-tables -fstack-protector-strong -Wa,--noexecstack -D_FORTIFY_SOURCE=2 -Wstrict-aliasing=2 -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=format-security -nostdlibinc -fdebug-info-for-profiling -Wno-enum-compare -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Wno-null-dereference -Wno-pointer-compare -Wno-final-dtor-non-final-class -Wno-psabi -Wno-null-pointer-subtraction -Wno-string-concatenation -Wno-deprecated-non-prototype -Wno-unused -Wno-deprecated -msoft-float -march=armv7-a -mfloat-abi=softfp -mfpu=neon  -target armv7a-linux-androideabi10000 -DANDROID_STRICT -fPIC -Wimplicit-fallthrough -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-gnu-include-next -fvisibility-inlines-hidden -mllvm -enable-shrink-wrap=false -Ihardware/mediatek/PowerOffAlarm -D__LIBC_API__=10000 -D__LIBM_API__=10000 -D__LIBDL_API__=10000 -Ilibnativehelper/include_jni -Isystem/libbase/include -Iexternal/fmtlib/include -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/techpack/audio/include -Iexternal/libcxx/include -Iexternal/libcxxabi/include -Isystem/logging/liblog/include -Ibionic/libc/async_safe/include -Ibionic/libc/system_properties/include -Isystem/core/property_service/libpropertyinfoparser/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -Werror -Wall -Wextra -DDO_NOT_CHECK_MANUAL_BINDER_INTERFACES -std=gnu++20 -fno-rtti -Isystem/core/include -Isystem/logging/liblog/include -Isystem/media/audio/include -Ihardware/libhardware/include -Ihardware/libhardware_legacy/include -Ihardware/ril/include -Iframeworks/native/include -Iframeworks/native/opengl/include -Iframeworks/av/include  -Werror=bool-operation -Werror=format-insufficient-args -Werror=implicit-int-float-conversion -Werror=int-in-bool-context -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=xor-used-as-pow -Wno-void-pointer-to-enum-cast -Wno-void-pointer-to-int-cast -Wno-pointer-to-int-cast -Werror=fortify-source -Wno-unused-variable -Wno-error=format -Wno-missing-field-initializers -Wno-packed-non-pod -Werror=address-of-temporary -Werror=incompatible-function-pointer-types -Werror=null-dereference -Werror=return-type -Wno-tautological-constant-compare -Wno-tautological-type-limit-compare -Wno-implicit-int-float-conversion -Wno-tautological-overlap-compare -Wno-deprecated-copy -Wno-range-loop-construct -Wno-zero-as-null-pointer-constant -Wno-deprecated-anon-enum-enum-conversion -Wno-deprecated-enum-enum-conversion -Wno-pessimizing-move -Wno-non-c-typedef-for-linkage -Wno-align-mismatch -Wno-error=unused-but-set-variable -Wno-error=unused-but-set-parameter -Wno-error=deprecated-builtins -Wno-error=deprecated -Wno-error=single-bit-bitfield-constant-conversion -Wno-error=enum-constexpr-conversion -Wno-deprecated-dynamic-exception-spec -fcommon -Wno-format-insufficient-args -Wno-misleading-indentation -Wno-bitwise-instead-of-logical -Wno-unused -Wno-unused-parameter -Wno-unused-but-set-parameter -Wno-unqualified-std-cast-call -Wno-array-parameter -Wno-gnu-offsetof-extensions -Wno-fortify-source -MD -MF out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/RtcDriver.o.d -o out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/RtcDriver.o hardware/mediatek/PowerOffAlarm/jni/RtcDriver.cpp
+In file included from hardware/mediatek/PowerOffAlarm/jni/RtcDriver.cpp:6:
+In file included from system/libbase/include/android-base/unique_fd.h:25:
+In file included from bionic/libc/include/unistd.h:34:
+In file included from bionic/libc/include/sys/select.h:40:
+In file included from bionic/libc/include/signal.h:35:
+out/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/asm/sigcontext.h:77:2: error: unknown type name '__uint128_t'
+   77 |         __uint128_t vregs[32];
+      |         ^
+1 error generated.
+[  0% 122/30138] //hardware/mediatek/PowerOffAlarm:libjni_poweroffalarm clang++ jni/AlarmDriver.cpp [arm]
+FAILED: out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/AlarmDriver.o
+PWD=/proc/self/cwd prebuilts/clang/host/linux-x86/clang-r510928/bin/clang++ -c -mthumb -Os -fomit-frame-pointer -mllvm -enable-shrink-wrap=false -O2 -Wall -Wextra -Winit-self -Wpointer-arith -Wunguarded-availability -Werror=date-time -Werror=int-conversion -Werror=pragma-pack -Werror=pragma-pack-suspicious-include -Werror=sizeof-array-div -Werror=string-plus-int -Werror=unreachable-code-loop-increment -Wno-error=deprecated-declarations -Wno-c99-designator -Wno-gnu-folding-constant -Wno-inconsistent-missing-override -Wno-error=reorder-init-list -Wno-reorder-init-list -Wno-sign-compare -Wno-unused -DANDROID -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -D__ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ -faddrsig -fdebug-default-version=5 -fcolor-diagnostics -ffp-contract=off -fno-exceptions -fno-strict-aliasing -fmessage-length=0 -gsimple-template-names -gz=zstd -no-canonical-prefixes -fdebug-prefix-map=/proc/self/cwd= -ftrivial-auto-var-init=zero -g -ffunction-sections -fdata-sections -fno-short-enums -funwind-tables -fstack-protector-strong -Wa,--noexecstack -D_FORTIFY_SOURCE=2 -Wstrict-aliasing=2 -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=format-security -nostdlibinc -fdebug-info-for-profiling -Wno-enum-compare -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Wno-null-dereference -Wno-pointer-compare -Wno-final-dtor-non-final-class -Wno-psabi -Wno-null-pointer-subtraction -Wno-string-concatenation -Wno-deprecated-non-prototype -Wno-unused -Wno-deprecated -msoft-float -march=armv7-a -mfloat-abi=softfp -mfpu=neon  -target armv7a-linux-androideabi10000 -DANDROID_STRICT -fPIC -Wimplicit-fallthrough -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-gnu-include-next -fvisibility-inlines-hidden -mllvm -enable-shrink-wrap=false -Ihardware/mediatek/PowerOffAlarm -D__LIBC_API__=10000 -D__LIBM_API__=10000 -D__LIBDL_API__=10000 -Ilibnativehelper/include_jni -Isystem/libbase/include -Iexternal/fmtlib/include -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/techpack/audio/include -Iexternal/libcxx/include -Iexternal/libcxxabi/include -Isystem/logging/liblog/include -Ibionic/libc/async_safe/include -Ibionic/libc/system_properties/include -Isystem/core/property_service/libpropertyinfoparser/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -Werror -Wall -Wextra -DDO_NOT_CHECK_MANUAL_BINDER_INTERFACES -std=gnu++20 -fno-rtti -Isystem/core/include -Isystem/logging/liblog/include -Isystem/media/audio/include -Ihardware/libhardware/include -Ihardware/libhardware_legacy/include -Ihardware/ril/include -Iframeworks/native/include -Iframeworks/native/opengl/include -Iframeworks/av/include  -Werror=bool-operation -Werror=format-insufficient-args -Werror=implicit-int-float-conversion -Werror=int-in-bool-context -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=xor-used-as-pow -Wno-void-pointer-to-enum-cast -Wno-void-pointer-to-int-cast -Wno-pointer-to-int-cast -Werror=fortify-source -Wno-unused-variable -Wno-error=format -Wno-missing-field-initializers -Wno-packed-non-pod -Werror=address-of-temporary -Werror=incompatible-function-pointer-types -Werror=null-dereference -Werror=return-type -Wno-tautological-constant-compare -Wno-tautological-type-limit-compare -Wno-implicit-int-float-conversion -Wno-tautological-overlap-compare -Wno-deprecated-copy -Wno-range-loop-construct -Wno-zero-as-null-pointer-constant -Wno-deprecated-anon-enum-enum-conversion -Wno-deprecated-enum-enum-conversion -Wno-pessimizing-move -Wno-non-c-typedef-for-linkage -Wno-align-mismatch -Wno-error=unused-but-set-variable -Wno-error=unused-but-set-parameter -Wno-error=deprecated-builtins -Wno-error=deprecated -Wno-error=single-bit-bitfield-constant-conversion -Wno-error=enum-constexpr-conversion -Wno-deprecated-dynamic-exception-spec -fcommon -Wno-format-insufficient-args -Wno-misleading-indentation -Wno-bitwise-instead-of-logical -Wno-unused -Wno-unused-parameter -Wno-unused-but-set-parameter -Wno-unqualified-std-cast-call -Wno-array-parameter -Wno-gnu-offsetof-extensions -Wno-fortify-source -MD -MF out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/AlarmDriver.o.d -o out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/AlarmDriver.o hardware/mediatek/PowerOffAlarm/jni/AlarmDriver.cpp
+In file included from hardware/mediatek/PowerOffAlarm/jni/AlarmDriver.cpp:6:
+In file included from system/libbase/include/android-base/unique_fd.h:25:
+In file included from bionic/libc/include/unistd.h:34:
+In file included from bionic/libc/include/sys/select.h:40:
+In file included from bionic/libc/include/signal.h:35:
+out/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/asm/sigcontext.h:77:2: error: unknown type name '__uint128_t'
+   77 |         __uint128_t vregs[32];
+      |         ^
+1 error generated.
+[  0% 123/30138] //hardware/mediatek/PowerOffAlarm:libjni_poweroffalarm clang++ jni/TimerFdDriver.cpp [arm]
+FAILED: out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/TimerFdDriver.o
+PWD=/proc/self/cwd prebuilts/clang/host/linux-x86/clang-r510928/bin/clang++ -c -mthumb -Os -fomit-frame-pointer -mllvm -enable-shrink-wrap=false -O2 -Wall -Wextra -Winit-self -Wpointer-arith -Wunguarded-availability -Werror=date-time -Werror=int-conversion -Werror=pragma-pack -Werror=pragma-pack-suspicious-include -Werror=sizeof-array-div -Werror=string-plus-int -Werror=unreachable-code-loop-increment -Wno-error=deprecated-declarations -Wno-c99-designator -Wno-gnu-folding-constant -Wno-inconsistent-missing-override -Wno-error=reorder-init-list -Wno-reorder-init-list -Wno-sign-compare -Wno-unused -DANDROID -DNDEBUG -UDEBUG -D__compiler_offsetof=__builtin_offsetof -D__ANDROID_UNAVAILABLE_SYMBOLS_ARE_WEAK__ -faddrsig -fdebug-default-version=5 -fcolor-diagnostics -ffp-contract=off -fno-exceptions -fno-strict-aliasing -fmessage-length=0 -gsimple-template-names -gz=zstd -no-canonical-prefixes -fdebug-prefix-map=/proc/self/cwd= -ftrivial-auto-var-init=zero -g -ffunction-sections -fdata-sections -fno-short-enums -funwind-tables -fstack-protector-strong -Wa,--noexecstack -D_FORTIFY_SOURCE=2 -Wstrict-aliasing=2 -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Werror=format-security -nostdlibinc -fdebug-info-for-profiling -Wno-enum-compare -Wno-enum-compare-switch -Wno-null-pointer-arithmetic -Wno-null-dereference -Wno-pointer-compare -Wno-final-dtor-non-final-class -Wno-psabi -Wno-null-pointer-subtraction -Wno-string-concatenation -Wno-deprecated-non-prototype -Wno-unused -Wno-deprecated -msoft-float -march=armv7-a -mfloat-abi=softfp -mfpu=neon  -target armv7a-linux-androideabi10000 -DANDROID_STRICT -fPIC -Wimplicit-fallthrough -D_LIBCPP_ENABLE_THREAD_SAFETY_ANNOTATIONS -Wno-gnu-include-next -fvisibility-inlines-hidden -mllvm -enable-shrink-wrap=false -Ihardware/mediatek/PowerOffAlarm -D__LIBC_API__=10000 -D__LIBM_API__=10000 -D__LIBDL_API__=10000 -Ilibnativehelper/include_jni -Isystem/libbase/include -Iexternal/fmtlib/include -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/audio/include/uapi -Iout/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/techpack/audio/include -Iexternal/libcxx/include -Iexternal/libcxxabi/include -Isystem/logging/liblog/include -Ibionic/libc/async_safe/include -Ibionic/libc/system_properties/include -Isystem/core/property_service/libpropertyinfoparser/include -isystem bionic/libc/include -isystem bionic/libc/kernel/uapi/asm-arm -isystem bionic/libc/kernel/uapi -isystem bionic/libc/kernel/android/scsi -isystem bionic/libc/kernel/android/uapi -Werror -Wall -Wextra -DDO_NOT_CHECK_MANUAL_BINDER_INTERFACES -std=gnu++20 -fno-rtti -Isystem/core/include -Isystem/logging/liblog/include -Isystem/media/audio/include -Ihardware/libhardware/include -Ihardware/libhardware_legacy/include -Ihardware/ril/include -Iframeworks/native/include -Iframeworks/native/opengl/include -Iframeworks/av/include  -Werror=bool-operation -Werror=format-insufficient-args -Werror=implicit-int-float-conversion -Werror=int-in-bool-context -Werror=int-to-pointer-cast -Werror=pointer-to-int-cast -Werror=xor-used-as-pow -Wno-void-pointer-to-enum-cast -Wno-void-pointer-to-int-cast -Wno-pointer-to-int-cast -Werror=fortify-source -Wno-unused-variable -Wno-error=format -Wno-missing-field-initializers -Wno-packed-non-pod -Werror=address-of-temporary -Werror=incompatible-function-pointer-types -Werror=null-dereference -Werror=return-type -Wno-tautological-constant-compare -Wno-tautological-type-limit-compare -Wno-implicit-int-float-conversion -Wno-tautological-overlap-compare -Wno-deprecated-copy -Wno-range-loop-construct -Wno-zero-as-null-pointer-constant -Wno-deprecated-anon-enum-enum-conversion -Wno-deprecated-enum-enum-conversion -Wno-pessimizing-move -Wno-non-c-typedef-for-linkage -Wno-align-mismatch -Wno-error=unused-but-set-variable -Wno-error=unused-but-set-parameter -Wno-error=deprecated-builtins -Wno-error=deprecated -Wno-error=single-bit-bitfield-constant-conversion -Wno-error=enum-constexpr-conversion -Wno-deprecated-dynamic-exception-spec -fcommon -Wno-format-insufficient-args -Wno-misleading-indentation -Wno-bitwise-instead-of-logical -Wno-unused -Wno-unused-parameter -Wno-unused-but-set-parameter -Wno-unqualified-std-cast-call -Wno-array-parameter -Wno-gnu-offsetof-extensions -Wno-fortify-source -MD -MF out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/TimerFdDriver.o.d -o out/soong/.intermediates/hardware/mediatek/PowerOffAlarm/libjni_poweroffalarm/android_arm_armv7-a-neon_static/0e7aadb4ccf134e3003f27a606ef3a68/obj/hardware/mediatek/PowerOffAlarm/jni/TimerFdDriver.o hardware/mediatek/PowerOffAlarm/jni/TimerFdDriver.cpp
+In file included from hardware/mediatek/PowerOffAlarm/jni/TimerFdDriver.cpp:6:
+In file included from system/libbase/include/android-base/unique_fd.h:25:
+In file included from bionic/libc/include/unistd.h:34:
+In file included from bionic/libc/include/sys/select.h:40:
+In file included from bionic/libc/include/signal.h:35:
+out/soong/.intermediates/vendor/lineage/build/soong/generated_kernel_includes/gen/usr/include/asm/sigcontext.h:77:2: error: unknown type name '__uint128_t'
+   77 |         __uint128_t vregs[32];
+      |         ^
+1 error generated.
+[  0% 124/30138] //packages/services/Telephony:TeleService__phone__auto_generated_characteristics_rro aapt2 link [common]
+[  0% 125/30138] //packages/providers/TelephonyProvider:TelephonyProvider__phone__auto_generated_characteristics_rro aapt2 link [common]
+[  0% 126/30138] //frameworks/base/packages/WAPPushManager:WAPPushManager jarjar [common]
+[  0% 127/30138] //packages/apps/SimpleSettingsConfig:SimpleSettingsConfig javac [common]
+[  0% 128/30138] //packages/apps/Profiles:Profiles jarjar [common]
+[  0% 129/30138] //packages/modules/adb:abb clang++ daemon/abb.cpp
+[  0% 130/30138] //system/server_configurable_flags/aconfigd:aconfigd clang++ proto/system/server_configurable_flags/aconfigd/aconfigd.pb.cc
+[  0% 131/30138] //system/server_configurable_flags/aconfigd:aconfigd clang++ aconfigd_util.cpp
+[  0% 132/30138] //system/server_configurable_flags/aconfigd:aconfigd clang++ aconfigd_main.cpp
+[  0% 133/30138] //frameworks/libs/gsma_services/satellite_client:SatelliteClient javac [common]
+[  0% 134/30138] Building Kernel Config
+make: Entering directory '/home/martin/lineage/kernel/samsung/a14xm'
+make[1]: Entering directory '/home/martin/lineage/out/target/product/a14xm/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:19:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hx83112f/Kconfig:17:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hxchipset_hx83108x/Kconfig:17:warning: choice value used outside its choice group
+drivers/input/touchscreen/himax/himax_ic_hx83102j/Kconfig:16:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:28:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hx83112f/Kconfig:23:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hxchipset_hx83108x/Kconfig:23:warning: choice value used outside its choice group
+drivers/input/touchscreen/mediatek/hxchipset_hx83102p/Kconfig:16:warning: choice default symbol 'TOUCHSCREEN_HIMAX_INCELL' is not contained in the choice
+drivers/input/touchscreen/mediatek/hx83112f/Kconfig:14:warning: choice default symbol 'TOUCHSCREEN_HIMAX_INCELL' is not contained in the choice
+drivers/input/touchscreen/mediatek/hxchipset_hx83108x/Kconfig:14:warning: choice default symbol 'TOUCHSCREEN_HIMAX_INCELL' is not contained in the choice
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/home/martin/lineage/out/target/product/a14xm/obj/KERNEL_OBJ'
+make: Leaving directory '/home/martin/lineage/kernel/samsung/a14xm'
+[  0% 135/30138] //system/server_configurable_flags/aconfigd:aconfigd clang++ aconfigd.cpp
+[  0% 136/30138] //packages/modules/adb:adbd link adbd
+ninja: build stopped: subcommand failed.
+16:47:48 ninja failed with: exit status 1
+
+[0;31m#### failed to build some targets (15 seconds) ####[00m
+
