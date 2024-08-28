@@ -42,6 +42,9 @@ BOARD_MKBOOTIMG_ARGS += --board ""
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Platform
 TARGET_BOARD_PLATFORM := mt6833
 BOARD_HAS_MTK_HARDWARE := true
