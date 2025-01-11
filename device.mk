@@ -29,6 +29,16 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
     fstab.mt6833.ramdisk
+    init.connectivity.common.rc \
+    init.modem.rc \
+    init.mt6833.rc \
+    init.project.rc \
+    init.sec.rc \
+    init.sensor_2.0.rc \
+    init_connectivity.rc \
+
+PRODUCT_PACKAGES += \
+    ueventd.mt6833.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6833.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6833.rc
