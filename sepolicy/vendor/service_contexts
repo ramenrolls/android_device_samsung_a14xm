@@ -2,3 +2,6 @@
 
 # GNSS
 vendor.samsung.hardware.gnss.ISehGnss/default                u:object_r:hal_gnss_service:s0
+
+# Light
+vendor.samsung.hardware.light.ILights/default            u:object_r:hal_light_service:s0

@@ -1521,7 +1521,6 @@ vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
-## IMS
 # IMS / Mediatek
 -system_ext/framework/mediatek-common.jar
 -system_ext/framework/mediatek-framework.jar
@@ -1560,9 +1559,13 @@ vendor/bin/hw/android.hardware.security.keymint-service
 vendor/etc/init/android.hardware.security.keymint-service.rc
 vendor/lib64/libpuresoftkeymasterdevice.so
 
+# Lights
+-vendor/lib64/hw/lights.mt6833.so
+vendor/lib/hw/lights.mt6833.so
+-vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so
-
 
 

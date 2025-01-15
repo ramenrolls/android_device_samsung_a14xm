@@ -83,3 +83,6 @@
 /dev/socket/rild-ims(/.*)?          u:object_r:rild_ims_socket:s0
 /mnt/vendor/efs/ims_setting(/.*)?                           u:object_r:sec_efs_file:s0
 /dev/socket/imsd	u:object_r:imsd_socket:s0
+
+## Lights
+/vendor/bin/hw/vendor\.samsung\.hardware\.light-service          u:object_r:hal_light_default_exec:s0

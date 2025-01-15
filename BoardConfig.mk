@@ -46,6 +46,9 @@ TARGET_NO_BOOTLOADER := true
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
+# Include
+$(call soong_config_set,samsungVars,target_specific_header_path,$(COMMON_PATH)/include)
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432

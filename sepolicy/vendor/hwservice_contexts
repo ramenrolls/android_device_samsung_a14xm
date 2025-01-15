@@ -22,3 +22,6 @@ vendor.samsung.hardware.gnss::ISehGnss                                 u:object_
 # Health
 vendor.samsung.hardware.health::ISehHealth      u:object_r:hal_health_hwservice:s0
 vendor.samsung.hardware.health::IHealth      u:object_r:hal_health_hwservice:s0
+
+# Lights
+vendor.samsung.hardware.light::ISehLight                                  u:object_r:hal_light_hwservice:s0
