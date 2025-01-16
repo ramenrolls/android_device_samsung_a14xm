@@ -136,3 +136,11 @@ ro.vendor.mtk_mvpu_security_support=0
 ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.hdr10plus.enable=1
 media.c2.dmabuf.padding=3072
+
+# Neural Networks
+ro.vendor.mtk_nn.option=A,B,E,F,Z
+ro.vendor.mtk_nn_baseline_support=1
+ro.vendor.mtk_nn_quant_preferred=1
+ro.vendor.mtk_nn_support=1
+
+

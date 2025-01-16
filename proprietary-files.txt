@@ -1466,8 +1466,8 @@ vendor/firmware/focaltech_ft8722_txd.ini
 -vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 -system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
 
-## Digital Rights Management (DRM)
--vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+# DRM
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
 vendor/lib64/mediadrm/libwvdrmengine.so
@@ -1616,6 +1616,76 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.3.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
+
+# Neural Networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-gpu.xml
+vendor/lib64/android.hardware.neuralnetworks@1.0.so
+vendor/lib64/android.hardware.neuralnetworks@1.1.so
+vendor/lib64/android.hardware.neuralnetworks@1.2.so
+vendor/lib64/android.hardware.neuralnetworks@1.3.so
+vendor/lib64/libneuron_adapter.so
+vendor/lib64/libneuron_platform.so
+vendor/lib64/libtextclassifier_hash.so
+vendor/lib64/libneuropilot_hal_utils.so
+vendor/lib64/libion.so
+vendor/lib64/libion_mtk.so
+vendor/lib64/libapu_mdw.so
+vendor/lib64/libapusys.so
+vendor/lib64/libapusys_edma.so
+vendor/lib64/libneuroeara.so
+vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V2-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
+system_ext/lib64/libmvpu_cic_ci_compiler.mtk.so
+system_ext/lib64/libmvpu_cic_ci_compiler_25.mtk.so
+system_ext/lib64/libmvpu_clc_14_mvpu_debuginfo_25.mtk.so
+system_ext/lib64/libmvpu_clc_14_mvpu_elf_25.mtk.so
+system_ext/lib64/libmvpu_clc_14_mvpu_utility_25.mtk.so
+system_ext/lib64/libmvpu_clc_mvpu_debuginfo.mtk.so
+system_ext/lib64/libmvpu_clc_mvpu_elf.mtk.so
+system_ext/lib64/libmvpu_clc_mvpu_utility.mtk.so
+system_ext/lib64/libmvpu_config.mtk.so
+system_ext/lib64/libmvpu_engine.mtk.so
+system_ext/lib64/libmvpu_engine_25.mtk.so
+system_ext/lib64/libmvpu_engine_25_pub.mtk.so
+system_ext/lib64/libmvpu_engine_pub.mtk.so
+system_ext/lib64/libmvpu_pattern.mtk.so
+system_ext/lib64/libmvpu_pattern_25.mtk.so
+system_ext/lib64/libmvpu_pattern_25_pub.mtk.so
+system_ext/lib64/libmvpu_pattern_pub.mtk.so
+system_ext/lib64/libmvpu_runtime.mtk.so
+system_ext/lib64/libmvpu_runtime_25.mtk.so
+system_ext/lib64/libmvpu_runtime_25_pub.mtk.so
+system_ext/lib64/libmvpu_runtime_builtin.mtk.so
+system_ext/lib64/libmvpu_runtime_builtin_25.mtk.so
+system_ext/lib64/libmvpu_runtime_pub.mtk.so
+system_ext/lib64/libmvpuop25_mtk_cv.mtk.so
+system_ext/lib64/libmvpuop25_mtk_nn.mtk.so
+system_ext/lib64/libmvpuop_mtk_cv.mtk.so
+system_ext/lib64/libmvpuop_mtk_nn.mtk.so
+system_ext/lib64/libnativecheck-jni.so
+system_ext/lib64/libneuron_graph_delegate.mtk.so
+system_ext/lib64/libneuronusdk_adapter.mtk.so
+system_ext/lib64/libneuropilot_hal_utils.so
+system_ext/lib64/libnir_neon_driver_ndk.mtk.so
+system_ext/lib64/libapu_mdw_ext.mtk.so
+system_ext/lib64/libapuwareapusys.mtk.so
+system_ext/lib64/libapuwareapusys_v2.mtk.so
+system_ext/lib64/libapuwarehmp.mtk.so
+system_ext/lib64/libapuwareutils.mtk.so
+system_ext/lib64/libapuwareutils_v2.mtk.so
+system_ext/lib64/libapuwarexrp.mtk.so
+system_ext/lib64/libapuwarexrp_v2.mtk.so
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service

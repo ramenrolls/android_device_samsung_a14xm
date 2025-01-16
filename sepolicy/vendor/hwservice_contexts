@@ -25,3 +25,9 @@ vendor.samsung.hardware.health::IHealth      u:object_r:hal_health_hwservice:s0
 
 # Lights
 vendor.samsung.hardware.light::ISehLight                                  u:object_r:hal_light_hwservice:s0
+
+# Neural Networks
+vendor.mediatek.hardware.apuware.apusys::INeuronApusys u:object_r:hal_neuralnetworks_hwservice:s0
+vendor.mediatek.hardware.apuware.xrp::INeuronXrp       u:object_r:hal_neuralnetworks_hwservice:s0
+vendor.mediatek.hardware.apuware.utils::IApuwareUtils u:object_r:hal_neuralnetworks_hwservice:s0
+vendor.mediatek.hardware.apuware.hmp::IApuwareHmp u:object_r:hal_neuralnetworks_hwservice:s0
