@@ -35,3 +35,6 @@ vendor.mediatek.hardware.apuware.hmp::IApuwareHmp u:object_r:hal_neuralnetworks_
 # PowerHAL
 vendor.mediatek.hardware.mtkpower::IMtkPerf  u:object_r:hal_power_hwservice:s0
 vendor.mediatek.hardware.mtkpower::IMtkPower u:object_r:hal_power_hwservice:s0
+
+# Vibrator
+vendor.samsung.hardware.vibrator::ISehVibrator                         u:object_r:hal_vibrator_hwservice:s0
