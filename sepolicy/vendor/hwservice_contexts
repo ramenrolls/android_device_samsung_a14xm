@@ -32,6 +32,10 @@ vendor.mediatek.hardware.apuware.xrp::INeuronXrp       u:object_r:hal_neuralnetw
 vendor.mediatek.hardware.apuware.utils::IApuwareUtils u:object_r:hal_neuralnetworks_hwservice:s0
 vendor.mediatek.hardware.apuware.hmp::IApuwareHmp u:object_r:hal_neuralnetworks_hwservice:s0
 
+# NFC
+vendor.samsung.hardware.nfc::ISehNfc           u:object_r:hal_nfc_hwservice:s0
+vendor.nxp.nxpnfc::INxpNfc  u:object_r:hal_nfc_hwservice:s0
+
 # PowerHAL
 vendor.mediatek.hardware.mtkpower::IMtkPerf  u:object_r:hal_power_hwservice:s0
 vendor.mediatek.hardware.mtkpower::IMtkPower u:object_r:hal_power_hwservice:s0

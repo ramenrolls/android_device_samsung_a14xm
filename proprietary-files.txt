@@ -1687,6 +1687,16 @@ system_ext/lib64/libapuwareutils_v2.mtk.so
 system_ext/lib64/libapuwarexrp.mtk.so
 system_ext/lib64/libapuwarexrp_v2.mtk.so
 
+## NFC
+vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
+vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
+vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
+vendor/etc/init/init.nfc.samsung.rc
+vendor/etc/libnfc-nxp.conf
+vendor/etc/nfc/libnfc-nxp_RF.conf
+vendor/lib64/nfc_nci_nxpsn.so
+vendor/firmware/nfc/libpn557_fw.so
+
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc

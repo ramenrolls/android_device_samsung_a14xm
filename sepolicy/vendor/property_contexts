@@ -169,3 +169,12 @@ vendor.ims.eims.pdn.info u:object_r:vendor_mtk_ims_eims_pdn_prop:s0
 
 # MTK IMS Config Provision property
 persist.vendor.mtk.provision. u:object_r:vendor_mtk_provision_prop:s0
+
+# NFC related property
+ persist.vendor.st_nfc_gsma_support  u:object_r:vendor_mtk_st_nfc_gsma_support_prop:s0
+ persist.vendor.st_nfc_ignore_modem  u:object_r:vendor_mtk_st_nfc_ignore_modem_prop:s0
+ ro.vendor.mtk_nfc_addon_support     u:object_r:vendor_mtk_nfc_addon_support_prop:s0
+ ro.vendor.mtk_uicc_clf              u:object_r:vendor_mtk_nfc_uicc_clf_prop:s0
+ persist.vendor.radio.seapi.off      u:object_r:vendor_mtk_radio_seapi_off_prop:s0
+ persist.vendor.nxp_nfc_gsma_support u:object_r:vendor_mtk_nxp_nfc_gsma_support_prop:s0
+ vendor.nfc.nfcstackp.enable         u:object_r:vendor_mtk_nfc_nfcstackp_enable_prop:s0
