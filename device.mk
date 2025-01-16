@@ -254,6 +254,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/init.recovery.mt6833.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.mt6833.rc
 
+# Sensors
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@2.0.vendor \
+    android.hardware.sensors@2.0.vendor
+
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)

@@ -1744,3 +1744,14 @@ vendor/etc/.tp/.thermal_policy_08
 vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/throttle.sh
+
+# Sensors
+-vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
+vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc
+-vendor/lib64/hw/sensors.mt6833.so
+-vendor/lib/hw/sensors.mt6833.so
+vendor/lib64/sensors.grip.so
+vendor/firmware/remoteproc_scp
+vendor/lib64/libhfmanager.so
+vendor/lib64/libksensor.so
+vendor/etc/sensors/hals.conf

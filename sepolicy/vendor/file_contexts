@@ -107,3 +107,9 @@
 /data/vendor/thermal(/.*)?          u:object_r:thermal_core_data_file:s0
 /dev/socket/thermal_socket(/.*)? u:object_r:thermal_socket:s0
 /dev/socket/thermal_hal_socket(/.*)? u:object_r:thermal_hal_socket:s0
+
+## Sensors
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors@[0-9]\.[0-9]-service(\.multihal)?  u:object_r:hal_sensors_default_exec:s0
+/vendor/bin/hw/android\.hardware\.sensors@2\.0-service-mediatek             u:object_r:mtk_hal_sensors_exec:s0
+
+/sys/class/sensors(/.*)?            --               u:object_r:sysfs_sensor_writable:s0
