@@ -9,3 +9,19 @@ ro.vendor.mtk_audio_alac_support     u:object_r:vendor_mtk_default_prop:s0
 ro.vendor.mtk_audio_ape_support      u:object_r:vendor_mtk_default_prop:s0
 ro.vendor.mtk_besloudness_support       u:object_r:vendor_mtk_besloudness_support_prop:s0
 ro.vendor.mtk_hifiaudio_support         u:object_r:vendor_mtk_hifiaudio_support_prop:s0
+
+# bt
+vendor.bluetooth.ldac.abr u:object_r:vendor_mtk_default_prop:s0
+
+# config no bt multidevice performance according to chip
+ro.vendor.bluetooth.bt_multidevice_perform u:object_r:vendor_mtk_default_prop:s0
+
+#=============mtk bt property====================
+ro.vendor.bluetooth.a2dp_aac_vbr.is_disabled           u:object_r:vendor_mtk_bt_aac_vbr_prop:s0
+persist.vendor.bluetooth.leaudio_mode                  u:object_r:vendor_mtk_default_prop:s0
+persist.vendor.bluetooth.a2dp_src_sink_both_enable     u:object_r:vendor_mtk_default_prop:s0
+persist.vendor.bluetooth.blemesh_enable                u:object_r:vendor_mtk_default_prop:s0
+persist.vendor.bluetooth.mtk_bt_consumer_feature       u:object_r:vendor_mtk_default_prop:s0
+persist.vendor.bluetooth.fw_log_switch                 u:object_r:vendor_mtk_default_prop:s0
+
+vendor.bluetooth.performance. u:object_r:vendor_mtk_bt_perf_prop:s0

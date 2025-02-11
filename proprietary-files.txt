@@ -289,4 +289,24 @@ vendor/etc/audio_param/SmartPa_ParamUnitDesc.xml
 vendor/etc/audio_param_cust/audio_param/SmartPa_AudioParam.xml
 vendor/etc/audio_param_cust/audio_param/SmartPa_ParamUnitDesc.xml
 
+## Bluetooth
+-vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
+vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+-vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
+-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
+-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
+-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+-vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
+-vendor/lib64/libbluetooth_audio_session_mediatek.so
+-vendor/lib64/libbluetooth_audio_session.so
+-vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbluetooth_relayer.so
+vendor/lib64/libbluetooth_hw_test.so
+-vendor/lib64/libbluetoothem_mtk.so
+-vendor/lib64/libbluetooth_mtk.so
+-vendor/lib64/libbt-vendor.so
 
+# Bluetooth (Firmware)
+vendor/firmware/soc2_2_ram_bt_1_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_1a_1_hdr.bin
+vendor/firmware/BT_FW.cfg

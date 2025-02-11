@@ -11,3 +11,8 @@
 # Platform
 /dev/snd(/.*)?		u:object_r:audio_device:s0
 
+## Bluetooth
+/vendor/bin/hw/android\.hardware\.bluetooth@1\.1-service-mediatek           u:object_r:mtk_hal_bluetooth_exec:s0
+/mnt/vendor/efs/bluetooth(/.*)?	u:object_r:bluetooth_efs_file:s0
+/efs/bluetooth(/.*)?	u:object_r:bluetooth_efs_file:s0
+/dev/socket/bluetooth	u:object_r:bluetooth_socket:s0
