@@ -16,3 +16,27 @@
 /mnt/vendor/efs/bluetooth(/.*)?	u:object_r:bluetooth_efs_file:s0
 /efs/bluetooth(/.*)?	u:object_r:bluetooth_efs_file:s0
 /dev/socket/bluetooth	u:object_r:bluetooth_socket:s0
+
+## Camera HAL
+/vendor/bin/hw/camerahalserver                                              u:object_r:mtk_hal_camera_exec:s0
+
+# camera device
+/dev/camera-dip(/.*)?     u:object_r:camera_dip_device:s0
+/dev/camera-dpe(/.*)?     u:object_r:camera_dpe_device:s0
+/dev/camera-fdvt(/.*)?     u:object_r:camera_fdvt_device:s0
+/dev/camera-isp(/.*)?     u:object_r:camera_isp_device:s0
+/dev/camera-mfb(/.*)?     u:object_r:camera_mfb_device:s0
+/dev/camera-rsc(/.*)?     u:object_r:camera_rsc_device:s0
+/dev/camera_eeprom[0-9]+ u:object_r:camera_eeprom_device:s0
+
+/dev/kd_camera_hw.*)? u:object_r:kd_camera_hw_device:s0
+
+/data/vendor/dualcamera(/.*)? u:object_r:vendor_camera_dualcamera_file:s0
+/data/vendor/camera_dump(/.*)? u:object_r:vendor_camera_dump_file:s0
+
+# efs file
+/mnt/vendor/efs/camera(/.*)?	u:object_r:camera_efs_file:s0
+
+
+
+

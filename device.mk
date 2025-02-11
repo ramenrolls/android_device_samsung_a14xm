@@ -88,6 +88,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     bluetooth.profile.pan.panu.enabled=true \
     bluetooth.profile.pbap.server.enabled=true
 
+## Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.device@3.6.vendor \
+    android.hardware.camera.provider@2.6.vendor
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false

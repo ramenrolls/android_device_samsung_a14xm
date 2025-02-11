@@ -25,3 +25,62 @@ persist.vendor.bluetooth.mtk_bt_consumer_feature       u:object_r:vendor_mtk_def
 persist.vendor.bluetooth.fw_log_switch                 u:object_r:vendor_mtk_default_prop:s0
 
 vendor.bluetooth.performance. u:object_r:vendor_mtk_bt_perf_prop:s0
+
+#============= mtk_hal_camera ==============
+persist.vendor.camera.cam.list u:object_r:vendor_mtk_hal_camera_prop:s0
+persist.vendor.camera.multicam.list  u:object_r:vendor_mtk_hal_camera_prop:s0
+#-bug604664 zhouyikuan.wt, add, 2020/12/22, add camera anti-stay property for factory apk
+
+#Bug626603, liudijin.wt, 2021/03/31, add ,force to expose only three cameras for GSI test.
+#+bug604664 zhouyikuan.wt, add, 2020/12/22, add camera anti-stay property for factory apk
+vendor.camera.aux.packagelist   u:object_r:vendor_mtk_aux_camera_prop:s0
+
+vendor.camera.save.temp.video         u:object_r:vendor_mtk_camera_prop:s0
+vendor.camera_af_power_debug          u:object_r:vendor_mtk_camera_prop:s0
+vendor.com.mediatek.gesture.pose      u:object_r:vendor_mtk_camera_prop:s0
+vendor.debug.dualcam.mode             u:object_r:vendor_mtk_camera_prop:s0
+vendor.debug.mtkcam.loglevel          u:object_r:vendor_mtk_camera_prop:s0
+vendor.mtkcamapp.cshot.platform       u:object_r:vendor_mtk_camera_prop:s0
+vendor.mtkcamapp.cshot.version        u:object_r:vendor_mtk_camera_prop:s0
+vendor.debug.stereo.single_main2      u:object_r:vendor_mtk_camera_prop:s0
+vendor.debug.surface.enabled          u:object_r:vendor_mtk_camera_prop:s0
+vendor.debug.thumbnailFromYuv.enable  u:object_r:vendor_mtk_camera_prop:s0
+vendor.lomoeffect.                    u:object_r:vendor_mtk_camera_prop:s0
+vendor.mtk.camera.app.                u:object_r:vendor_mtk_camera_prop:s0
+vendor.multizone.af.window.ratio      u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.mtkcamapp.loglevel     u:object_r:vendor_mtk_camera_prop:s0
+persist.vendor.mtk_camera_app_version u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_cam_cfb                 u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_cam_dualdenoise_support u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_cam_dualzoom_support    u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_cam_mfb_support         u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_cam_vfb                 u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_camera_app_api_version  u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_camera_app_version      u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_emulator_support        u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_fat_on_nand             u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_multiwindow             u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_slow_motion_support     u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_zsdhdr_support          u:object_r:vendor_mtk_camera_prop:s0
+vendor.vdo.cam.effect                 u:object_r:vendor_mtk_camera_prop:s0
+vendor.mtk.client.appmode             u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.mtk_video_hevc_enc_support  u:object_r:vendor_mtk_camera_prop:s0
+ro.vendor.hdr10plus.enable            u:object_r:vendor_mtk_camera_prop:s0
+
+# MTK cam debug
+vendor.debug.camera.   u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.cameng.   u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.lsc_mgr.  u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.ae.       u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.ae_mgr.   u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.awb_mgr.  u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.hdr       u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.shot.     u:object_r:vendor_mtk_emcamera_prop:s0
+vendor.debug.eis.      u:object_r:vendor_mtk_emcamera_prop:s0
+persist.vendor.mtkcam. u:object_r:vendor_mtk_emcamera_prop:s0
+
+# MTK CAM Security property
+ro.vendor.mtk_cam_security u:object_r:vendor_mtk_cam_security_prop:s0
+
+persist.vendor.service.atci.atm_mode u:object_r:vendor_mtk_atci_sys_prop:s0
+

@@ -3,3 +3,12 @@ vendor.mediatek.hardware.bluetooth.audio::IBluetoothAudioProvidersFactory u:obje
 
 # Bluetooth
 vendor.mediatek.hardware.bluetooth::IMtkBluetoothHci u:object_r:mtk_hal_bluetooth_hwservice:s0
+
+# Camera
+vendor.mediatek.hardware.camera.atms::IATMs u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.lomoeffect::ILomoEffect u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.ccap::ICCAPControl      u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.isphal::IISPModule      u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.postproc::IPostDevice u:object_r:mtk_hal_bgs_hwservice:s0
+vendor.mediatek.hardware.camera.security::ISecureCamera u:object_r:hal_camera_hwservice:s0
+vendor.mediatek.hardware.camera.frhandler::IFRHandler u:object_r:hal_camera_hwservice:s0
