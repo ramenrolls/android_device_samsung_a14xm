@@ -84,3 +84,25 @@ ro.vendor.mtk_cam_security u:object_r:vendor_mtk_cam_security_prop:s0
 
 persist.vendor.service.atci.atm_mode u:object_r:vendor_mtk_atci_sys_prop:s0
 
+## Graphics
+# PQ
+persist.vendor.sys.pq.             u:object_r:vendor_mtk_pq_prop:s0
+vendor.debug.pq.                   u:object_r:vendor_mtk_pq_prop:s0
+persist.vendor.sys.isp.            u:object_r:vendor_mtk_pq_prop:s0
+persist.vendor.sys.mtkaal.         u:object_r:vendor_mtk_pq_prop:s0
+ro.vendor.mtk_pq_color_mode        u:object_r:vendor_mtk_pq_ro_prop:s0
+ro.vendor.mtk_blulight_def_support u:object_r:vendor_mtk_pq_ro_prop:s0
+ro.vendor.mtk_chameleon_support    u:object_r:vendor_mtk_pq_ro_prop:s0
+ro.vendor.mtk_pq_support           u:object_r:vendor_mtk_pq_ro_prop:s0
+ro.vendor.mtk_appgamepq_support    u:object_r:vendor_mtk_pq_ro_prop:s0
+ro.vendor.mtk_gamehdr_support      u:object_r:vendor_mtk_pq_ro_prop:s0
+ro.vendor.pq.                      u:object_r:vendor_mtk_pq_ro_prop:s0
+
+vendor.debug.gpu.  u:object_r:vendor_mtk_gpu_prop:s0
+vendor.debug.gpud. u:object_r:vendor_mtk_gpu_prop:s0
+vendor.mali.config u:object_r:vendor_mtk_gpu_prop:s0
+ro.vendor.game_aisr_enable u:object_r:vendor_mtk_gpu_prop:s0
+
+vendor.debug.sf.hwc_pid           u:object_r:vendor_mtk_graphics_hwc_pid_prop:s0
+vendor.debug.sf.hdr_enable        u:object_r:vendor_mtk_graphics_hwc_hdr_prop:s0
+vendor.debug.sf.validate_separate u:object_r:vendor_mtk_graphics_hwc_validate_separate_prop:s0

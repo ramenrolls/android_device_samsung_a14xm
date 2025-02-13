@@ -1388,3 +1388,99 @@ vendor/lib/w2tmosc202csdeplh2_mipi_mono_tuning.so
 vendor/lib/w2tmosc202csdeplh_mipi_mono_tuning.so
 vendor/lib/w2tmosc202csmicrolh_mipi_raw_tuning.so
 vendor/lib/w2tmosc501csfrontsy_mipi_raw_tuning.so
+
+## Display
+-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc
+-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
+-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
+
+# Picture Quality Feature
+-vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service
+vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
+system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so
+-system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
+-system_ext/lib64/libPQjni.so
+-system_ext/lib64/libjni_pq.so
+-vendor/lib64/libpq_cust_base.so
+-vendor/lib64/libpqframework.so
+-vendor/lib64/libpqparamparser.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.2.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.3.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.4.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.5.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.6.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
+vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
+-vendor/lib64/hw/vendor.mediatek.hardware.pq@2.11-impl.so;SYMLINK=vendor/lib64/vendor.mediatek.hardware.pq@2.11-impl.so
+vendor/lib64/mt6833/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
+vendor/lib64/mt6833/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
+
+# Graphics
+-vendor/lib64/libgralloc_extra.so
+-vendor/lib64/libgralloc_metadata.so
+-vendor/lib64/libgralloctypes_mtk.so
+-system_ext/lib64/libgralloc_extra_sys.so
+vendor/lib64/libgpudataproducer.so
+vendor/lib64/libgpu_aux.so
+vendor/lib64/libgpud.so
+-system_ext/lib64/libged_kpi.so
+-system_ext/lib64/libged_sys.so
+-system_ext/lib64/libgpud_sys.so
+
+# Graphics Driver
+vendor/priv-app/GpuGameDriver.mt6833/GpuGameDriver.mt6833.apk
+
+# Vendor NDK
+vendor/lib64/arm.graphics-V1-ndk_platform.so
+system_ext/lib64/libarmnn_ndk.mtk.so
+-vendor/lib64/libarmnn_ndk.mtk.vndk.so
+vendor/lib64/libarmnn.so
+vendor/etc/armnn_app.config
+
+# EGL
+vendor/lib64/hw/vulkan.mali.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/hw/vulkan.mt6833.so
+vendor/lib64/egl/libGLES_meow.so
+vendor/lib64/egl/libMEOW_data.so
+vendor/lib64/egl/libMEOW_gift.so
+vendor/lib64/egl/libMEOW_qt.so
+vendor/lib64/egl/libMEOW_trace.so
+vendor/lib/egl/egl.cfg
+
+# Firmware (TouchScreen)
+vendor/firmware/focaltech_ft8722_fw_truly.bin
+vendor/firmware/focaltech_ft8722_fw_txd.bin
+vendor/firmware/focaltech_ft8722_truly.ini
+vendor/firmware/focaltech_ft8722_txd.ini
+
+# Hardware Composer
+-vendor/lib64/hw/hwcomposer.mt6833.so
+-vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+-system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
+
+## Digital Rights Management (DRM)
+-vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/lib64/mediadrm/libwvdrmengine.so
+-system_ext/lib64/libdrmmtkwhitelist.so
+-system_ext/lib64/libdrmmtkutil.so
+
+# DRM Crypto
+-vendor/lib64/liboemcrypto.so
+-vendor/lib/liboemcrypto.so
+
+## Widevine Key Provisioning
+vendor/bin/wvkprov
+vendor/lib64/libtlcWidevineModularDrm.so
+
+
+
