@@ -1478,6 +1478,16 @@ vendor/lib64/mediadrm/libwvdrmengine.so
 -vendor/lib64/liboemcrypto.so
 -vendor/lib/liboemcrypto.so
 
+## Fingerprint
+-vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service
+vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
+-vendor/lib64/hw/fingerprint.fpc.default.so
+-vendor/lib64/hw/fingerprint.silead.default.so
+-vendor/lib64/hw/fpsensor_fingerprint.default.so
+-vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so
+-system/app/sileadManager/sileadManager.apk
+-system/framework/vendor.silead.hardware.fingerprintext-V1.0-java.jar
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so

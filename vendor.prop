@@ -117,3 +117,6 @@ debug.mediatek.disp_decompress=1
 ################################################################################
 ### Widevine ###
 ro.vendor.mtk_widevine_drm_l1_support=1
+
+### Fingerprint
+persist.vendor.sys.fp.vendor=xinli-chipone-icnf7318AL

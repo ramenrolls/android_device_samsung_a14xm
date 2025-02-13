@@ -106,3 +106,7 @@ ro.vendor.game_aisr_enable u:object_r:vendor_mtk_gpu_prop:s0
 vendor.debug.sf.hwc_pid           u:object_r:vendor_mtk_graphics_hwc_pid_prop:s0
 vendor.debug.sf.hdr_enable        u:object_r:vendor_mtk_graphics_hwc_hdr_prop:s0
 vendor.debug.sf.validate_separate u:object_r:vendor_mtk_graphics_hwc_validate_separate_prop:s0
+
+## Fingerprint
+vendor.silead.fp.ext.    u:object_r:vendor_silead_fp_prop:s0
+persist.vendor.sys.fp.vendor            u:object_r:vendor_factory_prop:s0
