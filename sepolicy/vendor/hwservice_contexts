@@ -15,3 +15,6 @@ vendor.mediatek.hardware.camera.frhandler::IFRHandler u:object_r:hal_camera_hwse
 
 # Fingerprint
 vendor.silead.hardware.fingerprintext::ISileadFingerprint  u:object_r:hal_fingerprint_hwservice:s0
+
+# GNSS
+vendor.samsung.hardware.gnss::ISehGnss                                 u:object_r:hal_gnss_hwservice:s0

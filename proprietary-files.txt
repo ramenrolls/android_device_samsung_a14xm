@@ -1491,6 +1491,29 @@ vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 ## Gatekeeper
 -vendor/lib64/hw/gatekeeper.mt6833.so
 
+## GNSS
+-vendor/bin/hw/vendor.samsung.hardware.gnss@2.0-service
+vendor/etc/init/vendor.samsung.hardware.gnss@2.0-service.rc
+vendor/lib64/vendor.samsung.hardware.gnss@2.0.so
+-vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl.so
+system/lib64/vendor.samsung.hardware.gnss@2.0.so
+system/lib64/vendor.samsung.hardware.gnss-V4-cpp.so
+vendor/etc/gnss/agps_profiles_conf2.xml
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/MNL_Config.xml
+vendor/etc/gnss/mnl.prop
+vendor/etc/gnss/mpe.conf
+-vendor/lib64/hw/gps.default.so
+vendor/etc/init/init.gps_drv.rc
+vendor/etc/init/init.gps.rc
+## Hardware
+vendor/bin/mnld
+vendor/bin/mtk_agpsd
+vendor/lib64/libmnl.so
+vendor/lib64/libladder.so
+vendor/lib64/libz_stable.so;SYMLINK=vendor/lib64/libz.so
+vendor/lib64/libDR.so
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so

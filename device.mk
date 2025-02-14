@@ -124,6 +124,24 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl
 
+## GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss-V1-ndk_platform.vendor:64 \
+    android.hardware.gnss.measurement_corrections@1.1.vendor:64 \
+    android.hardware.gnss.visibility_control@1.0.vendor:64 \
+    android.hardware.gnss@1.1.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64 \
+    android.hardware.gnss@2.1-impl
+
+# Dynamic libs needed by `mnld` and `mtk_agpsd`
+PRODUCT_PACKAGES += \
+    libcurl.vendor
+    libssl.vendor
+    libexpat.vendor
+
+PRODUCT_PACKAGES += \
+    gps.default
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 

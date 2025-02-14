@@ -120,3 +120,8 @@ ro.vendor.mtk_widevine_drm_l1_support=1
 
 ### Fingerprint
 persist.vendor.sys.fp.vendor=xinli-chipone-icnf7318AL
+
+### GNSS
+ro.vendor.gps.chrdev=gps_drv
+ro.vendor.mtk_gps_support=1
+ro.vendor.mtk_log_hide_gps=2
