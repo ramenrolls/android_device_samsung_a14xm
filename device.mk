@@ -161,6 +161,15 @@ PRODUCT_BOOT_JARS += \
     telephony-common \
     voip-common
 
+## Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@4.1.vendor \
+    android.hardware.hardware_keystore.km41.xml \
+    libkeymaster4_1support.vendor \
+    libkeymaster41.vendor \
+    libpuresoftkeymasterdevice.vendor \
+    libsoft_attestation_cert.vendor
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \

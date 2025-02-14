@@ -1555,6 +1555,11 @@ vendor/lib64/libipsec_ims_shr.so
 system/lib64/libresampler_ims.so
 system_ext/lib64/libimsma.so
 
+## Keymint
+vendor/bin/hw/android.hardware.security.keymint-service
+vendor/etc/init/android.hardware.security.keymint-service.rc
+vendor/lib64/libpuresoftkeymasterdevice.so
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so

@@ -105,6 +105,14 @@
         </interface>
         <fqname>@1.0::IMemtrack/default</fqname>
     </hal>
+    <hal format="aidl" override="true">
+        <name>android.hardware.security.keymint</name>
+        <interface>
+            <name>IKeyMintDevice</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>IKeyMintDevice/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.mediatek.hardware.atci</name>
         <transport>hwbinder</transport>
