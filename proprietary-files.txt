@@ -1514,6 +1514,13 @@ vendor/lib64/libladder.so
 vendor/lib64/libz_stable.so;SYMLINK=vendor/lib64/libz.so
 vendor/lib64/libDR.so
 
+## Health
+vendor/bin/hw/android.hardware.health@2.1-service-samsung
+vendor/etc/init/android.hardware.health@2.1-service-samsung.rc
+vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
+vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so

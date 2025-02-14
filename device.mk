@@ -145,10 +145,15 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+## Health HALs
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
+    android.hardware.health@2.1.vendor
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \
-    fstab.mt6833.ramdisk
+    fstab.mt6833.ramdisk \
     init.connectivity.common.rc \
     init.modem.rc \
     init.mt6833.rc \

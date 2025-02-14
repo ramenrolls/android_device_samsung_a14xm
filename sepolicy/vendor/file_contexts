@@ -74,3 +74,7 @@
 /data/vendor/agps_supl(/.*)?        u:object_r:agpsd_data_file:s0
 /dev/ccci_c2k_agps      u:object_r:agps_device:s0
 /dev/ttyC2     u:object_r:agps_device:s0
+
+## Health
+/(vendor|system/vendor)/bin/hw/android\.hardware\.health@2\.1-service         u:object_r:hal_health_default_exec:s0
+/vendor/bin/hw/android\.hardware\.health@2\.1-service-samsung         u:object_r:hal_health_default_exec:s0

@@ -18,3 +18,7 @@ vendor.silead.hardware.fingerprintext::ISileadFingerprint  u:object_r:hal_finger
 
 # GNSS
 vendor.samsung.hardware.gnss::ISehGnss                                 u:object_r:hal_gnss_hwservice:s0
+
+# Health
+vendor.samsung.hardware.health::ISehHealth      u:object_r:hal_health_hwservice:s0
+vendor.samsung.hardware.health::IHealth      u:object_r:hal_health_hwservice:s0
