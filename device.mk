@@ -150,6 +150,17 @@ PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
     android.hardware.health@2.1.vendor
 
+## IMS
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+
+PRODUCT_BOOT_JARS += \
+    ims-common \
+    telephony-common \
+    voip-common
+
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.mt6833 \

@@ -123,3 +123,49 @@ ro.vendor.mtk_agps_app           u:object_r:vendor_mtk_gps_support_prop:s0
 ro.vendor.mtk_log_hide_gps       u:object_r:vendor_mtk_gps_support_prop:s0
 ro.vendor.mtk_hidl_consolidation u:object_r:vendor_mtk_gps_support_prop:s0
 
+## IMS ##
+# ims operator property
+vendor.ril.volte.mal.pctid u:object_r:vendor_mtk_operator_id_prop:s0
+
+persist.vendor.radio.simswitch.emmode u:object_r:vendor_mtk_simswitch_emmode_prop:s0
+
+persist.vendor.radio.mtk_dsbp_support u:object_r:vendor_mtk_dsbp_support_prop:s0
+
+persist.vendor.radio.imstestmode u:object_r:vendor_mtk_imstestmode_prop:s0
+
+persist.vendor.radio.smsformat u:object_r:vendor_mtk_smsformat_prop:s0
+
+persist.vendor.radio.gprs.prefer u:object_r:vendor_mtk_gprs_prefer_prop:s0
+
+persist.vendor.radio.testsim.cardtype u:object_r:vendor_mtk_testsim_cardtype_prop:s0
+
+persist.vendor.radio.ct.ir.engmode u:object_r:vendor_mtk_ct_ir_engmode_prop:s0
+
+persist.vendor.radio.disable_c2k_cap u:object_r:vendor_mtk_disable_c2k_cap_prop:s0
+
+# modem reset delay property
+vendor.mediatek.debug.md.reset.wait u:object_r:vendor_mtk_debug_md_reset_prop:s0
+
+persist.vendor.mtk.ims.video.enable u:object_r:vendor_mtk_vt_prop:s0
+
+# IMS property
+ro.vendor.md_auto_setup_ims       u:object_r:vendor_mtk_ims_prop:s0
+ro.vendor.md_mims_support         u:object_r:vendor_mtk_ims_prop:s0
+persist.vendor.ims_support        u:object_r:vendor_mtk_ims_prop:s0
+ro.vendor.mtk_imsi_switch_support u:object_r:vendor_mtk_ims_prop:s0
+persist.vendor.ims.simulate       u:object_r:vendor_mtk_ims_prop:s0
+ro.vendor.mtk_ims_notification    u:object_r:vendor_mtk_ims_prop:s0
+
+# Multiple IMS property
+persist.vendor.mims_support           u:object_r:vendor_mtk_mims_prop:s0
+persist.vendor.mtk_dynamic_ims_switch u:object_r:vendor_mtk_dynims_prop:s0
+ro.vendor.mtk_external_sim_support    u:object_r:vendor_mtk_extsim_prop:s0
+ro.vendor.mtk_external_sim_only_slots u:object_r:vendor_mtk_extsim_prop:s0
+ro.vendor.mtk_non_dsda_rsim_support   u:object_r:vendor_mtk_extsim_prop:s0
+ro.vendor.mtk_persist_vsim_disabled   u:object_r:vendor_mtk_extsim_prop:s0
+
+# IMS/EIMS pdn info property
+vendor.ims.eims.pdn.info u:object_r:vendor_mtk_ims_eims_pdn_prop:s0
+
+# MTK IMS Config Provision property
+persist.vendor.mtk.provision. u:object_r:vendor_mtk_provision_prop:s0

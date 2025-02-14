@@ -1521,6 +1521,40 @@ vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
+## IMS
+# IMS / Mediatek
+-system_ext/framework/mediatek-common.jar
+-system_ext/framework/mediatek-framework.jar
+-system_ext/framework/mediatek-ims-base.jar
+-system_ext/etc/sysconfig/com.mediatek.ims.config.xml
+-system_ext/etc/permissions/system-ext-permissions-mediatek.xml
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libvt_avsync.so
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so;MODULE_SUFFIX=-vendor
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# IMS / Samsung - from dm3qxxx-user 14 UP1A.231005.007 S918BXXS7CXL2 release-keys
+-system/framework/ims-common.jar
+-system/framework/imsmanager.jar
+-system/framework/telecom.jar
+-system/framework/telephony-common.jar
+-system/framework/voip-common.jar
+-system/app/ImsSettings.apk
+-system/priv-app/ImsService.apk
+-system/lib64/libsec-ims.so;SYMLINK=system/priv-app/lib/arm64/libsec-ims.so
+system/etc/permissions/imsmanager_library.xml
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+vendor/lib64/libipsec_ims_shr.so
+system/lib64/libresampler_ims.so
+system_ext/lib64/libimsma.so
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so
