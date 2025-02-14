@@ -1488,6 +1488,9 @@ vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc
 -system/app/sileadManager/sileadManager.apk
 -system/framework/vendor.silead.hardware.fingerprintext-V1.0-java.jar
 
+## Gatekeeper
+-vendor/lib64/hw/gatekeeper.mt6833.so
+
 ## Widevine Key Provisioning
 vendor/bin/wvkprov
 vendor/lib64/libtlcWidevineModularDrm.so
