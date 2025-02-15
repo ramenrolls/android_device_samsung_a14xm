@@ -143,3 +143,16 @@
 /dev/socket/rild-atci(/.*)?       u:object_r:rild_atci_socket:s0
 /dev/socket/rild-atci-c2k      u:object_r:rild_via_socket:s0
 /vendor/bin/secril_config_svc               u:object_r:vendor_secril_config_svc_exec:s0
+
+## Trust Zone
+/vendor/bin/tzdaemon      u:object_r:tzdaemon_exec:s0
+/vendor/bin/tzts_daemon      u:object_r:tztsd_exec:s0
+/dev/tzic	u:object_r:tz_device:s0
+/dev/tuihw	u:object_r:tz_device:s0
+/dev/tzdev	u:object_r:tz_user_device:s0
+/dev/tzirs	u:object_r:tz_device:s0
+/dev/tz_vfs      u:object_r:teei_vfs_device:s0
+/dev/tziwsock               u:object_r:tz_user_device:s0
+/dev/socket/tz                  u:object_r:tz_socket:s0
+/dev/tziwshmem 	u:object_r:tz_user_device:s0
+/dev/trustzone         u:object_r:tee_device:s0

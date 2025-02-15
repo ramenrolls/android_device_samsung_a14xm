@@ -184,3 +184,7 @@ ro.vendor.nfc.support.uicc=true
 ro.camera.notify_nfc=1
 ro.vendor.nfc.info.antpos=16
 ro.vendor.nfc.support.ese=false
+
+## Trust Zone
+ro.vendor.mtk_tee_gp_support=1
+ro.vendor.mtk_teegris_tee_support=1
