@@ -143,6 +143,32 @@ ro.vendor.mtk_nn_baseline_support=1
 ro.vendor.mtk_nn_quant_preferred=1
 ro.vendor.mtk_nn_support=1
 
+## Telephony
+ro.vendor.mtk_protocol1_rat_config=N/Lf/Lt/W/G
+ro.vendor.mtk_dmc_support=1
+ro.vendor.mtk_mapi_support=1
+ro.vendor.mtk_embms_support=1
+ro.vendor.mtk_sim_hot_swap_common_slot=1
+ro.vendor.mtk_sim_card_onoff=3
+ro.vendor.mtk_single_bin_modem_support=1
+ro.vendor.mtk_ps1_rat=N/Lf/Lt/W/G
+ro.vendor.mtk_lte_support=1
+persist.vendor.radio.mtk_ps2_rat=N/L/W/G
+persist.vendor.radio.mtk_ps3_rat=G
+persist.vendor.mtk_sim_switch_policy=2
+ro.vendor.mtk_world_phone_policy=0
+ro.vendor.sim_me_lock_mode=3
+persist.vendor.radio.mtk_dsbp_support=2
+ro.vendor.mtk_external_sim_only_slots=0
+ro.vendor.mtk_ril_mode=c6m_1rild
+ro.vendor.mtk_md_world_mode_support=1
+ro.vendor.mtk_data_config=1
+persist.vendor.mtk_wfc_support=1
+persist.vendor.volte_support=1
+persist.vendor.mtk.volte.enable=1
+persist.vendor.vilte_support=1
+persist.vendor.viwifi_support=1
+
 # NFC
 ro.vendor.nfc.feature.chipname=NXP_SN100U
 ro.vendor.nfc.support.advancedsetting=false

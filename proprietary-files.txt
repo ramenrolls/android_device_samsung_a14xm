@@ -1755,6 +1755,57 @@ vendor/etc/.tp/thermal.conf
 vendor/etc/.tp/thermal.off.conf
 vendor/etc/throttle.sh
 
+# RIL - Samsung
+vendor/bin/hw/rild
+-vendor/lib64/libril_sem.so
+-vendor/lib64/librilutils.so
+-vendor/lib64/libsecril-client.so
+-vendor/lib64/libsec-ril.so
+-vendor/lib64/libSemDataProps.so
+-vendor/lib64/libsemnativecarrierfeature.so
+-vendor/lib64/libSemTelephonyProps.so
+vendor/etc/init/init.vendor.onebinary.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/lib64/vendor.samsung.hardware.radio@2.0.so
+vendor/lib64/vendor.samsung.hardware.radio@2.1.so
+vendor/lib64/vendor.samsung.hardware.radio@2.2.so
+-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
+-vendor/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
+-vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
+system/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
+system/lib64/vendor.samsung.hardware.radio.bridge@2.1.so
+-system/lib64/vendor.samsung.hardware.radio-V1-ndk.so
+-system/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so
+system/etc/init/init.rilcommon.rc
+system/etc/restart_radio_process.sh
+system/bin/connfwexe
+system/bin/ddexe
+
+# RIL Backend - Mediatek
+-system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+-system_ext/lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
+-system_ext/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
+-system_ext/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
+vendor/etc/init/vendor.samsung.rilchip.mediatek.rc
+system/etc/init/init.rilchip.mediatek.rc
+vendor/lib64/libmtkrillog.so
+
+# Telephony Configs
+vendor/etc/virtual-spn-conf-by-efgid1.xml
+vendor/etc/virtual-spn-conf-by-efpnn.xml
+vendor/etc/virtual-spn-conf-by-efspn.xml
+vendor/etc/virtual-spn-conf-by-imsi.xml
+vendor/etc/ecc_list_OP01.xml
+vendor/etc/ecc_list_OP02.xml
+vendor/etc/ecc_list_OP09.xml
+vendor/etc/ecc_list_OP12.xml
+vendor/etc/ecc_list_OP17.xml
+vendor/etc/ecc_list_OP18.xml
+vendor/etc/ecc_list_OP20.xml
+vendor/etc/ecc_list_OP236.xml
+vendor/etc/ecc_list_preference.xml
+vendor/etc/ecc_list.xml
+
 # Sensors
 -vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
 vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc

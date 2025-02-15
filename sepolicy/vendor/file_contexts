@@ -123,3 +123,23 @@
 /vendor/bin/hw/android\.hardware\.sensors@2\.0-service-mediatek             u:object_r:mtk_hal_sensors_exec:s0
 
 /sys/class/sensors(/.*)?            --               u:object_r:sysfs_sensor_writable:s0
+
+## RIL
+/(vendor|system/vendor)/bin/hw/rild                                           u:object_r:rild_exec:s0
+
+/dev/socket/rild[0-9]*	u:object_r:rild_socket:s0
+/dev/socket/rild(/.*)?         u:object_r:rild_socket:s0
+/dev/socket/mrild(/.*)?  u:object_r:gsmrild_socket:s0
+/dev/socket/rild2(/.*)?     u:object_r:rild2_socket:s0
+/dev/socket/rild3(/.*)?     u:object_r:rild3_socket:s0
+/dev/socket/rild4(/.*)?     u:object_r:rild4_socket:s0
+/dev/socket/mrild2(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/mrild3(/.*)? u:object_r:gsmrild_socket:s0
+/dev/socket/rild-mal(/.*)?          u:object_r:rild_mal_socket:s0
+/dev/socket/rild-ims(/.*)?          u:object_r:rild_ims_socket:s0
+/dev/socket/rild-md2(/.*)?           u:object_r:rild_md2_socket:s0
+/dev/socket/rild-oem(/.*)?     u:object_r:rild_oem_socket:s0
+/dev/socket/rcs_rild(/.*)?        u:object_r:rcs_rild_socket:s0
+/dev/socket/rild-atci(/.*)?       u:object_r:rild_atci_socket:s0
+/dev/socket/rild-atci-c2k      u:object_r:rild_via_socket:s0
+/vendor/bin/secril_config_svc               u:object_r:vendor_secril_config_svc_exec:s0
