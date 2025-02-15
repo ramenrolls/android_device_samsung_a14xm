@@ -1423,6 +1423,15 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
 vendor/lib64/mt6833/libpq_prot.so;SYMLINK=vendor/lib64/libpq_prot.so
 vendor/lib64/mt6833/libmtk_drvb.so;SYMLINK=vendor/lib64/libmtk_drvb.so
 
+## FM
+vendor/firmware/mt6631_fm_v1_coeff.bin
+vendor/firmware/mt6631_fm_v1_patch.bin
+vendor/firmware/mt6635_fm_v1_coeff.bin
+vendor/firmware/mt6635_fm_v1_patch.bin
+vendor/etc/init/init.fmradio_drv.rc
+vendor/etc/init/init.connfem.rc
+vendor/firmware/fm_cust.cfg
+
 # Graphics
 -vendor/lib64/libgralloc_extra.so
 -vendor/lib64/libgralloc_metadata.so

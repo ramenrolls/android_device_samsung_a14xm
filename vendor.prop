@@ -52,6 +52,10 @@ debug.sf.earlyGl.sf.duration=30000000
 debug.sf.enable_hwc_vds=0
 debug.sf.late.sf.duration=30000000
 
+### FM
+persist.vendor.connsys.fm_chipid=mt6631_6635
+ro.vendor.fm.platform=mt6631_6635
+
 ### Hardware ###
 ro.hardware.egl=meow
 ro.hardware.hwcomposer=mtk_common
