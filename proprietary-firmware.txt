@@ -1,0 +1,12 @@
+# Firmware for model SM-A146P - from Samsung OTA A146PXXSBDXL1
+gz-verified.img SM-A146P
+lk-verified.img SM-A146P
+mcupm-verified.img SM-A146P
+md1img.img SM-A146P
+pi_img-verified.img SM-A146P
+preloader.img SM-A146P
+scp-verified.img SM-A146P
+spmfw-verified.img SM-A146P
+sspm-verified.img SM-A146P
+tee-verified.img SM-A146P
+tzar.img SM-A146P
