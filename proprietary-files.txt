@@ -1875,3 +1875,10 @@ vendor/tee/driver/00000000-4d54-4b5f-4246-564452484556
 vendor/tee/driver/00000000-4d54-4b5f-4246-564452565039
 vendor/tee/driver/00000000-4d54-4b5f-4246-57564e647276
 vendor/tee/driver/18d9f073-18a5-4ade-9def-875e07f7f293_
+
+## Vaultkeeper
+vendor/bin/vaultkeeperd
+vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
+vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
+vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
+vendor/etc/init/vaultkeeper_common.rc

@@ -156,3 +156,11 @@
 /dev/socket/tz                  u:object_r:tz_socket:s0
 /dev/tziwshmem 	u:object_r:tz_user_device:s0
 /dev/trustzone         u:object_r:tee_device:s0
+
+## Vaultkeeper
+/efs/vk(/.*)?                                   u:object_r:vaultkeeper_efs_file:s0
+/mnt/vendor/efs/vk(/.*)?                                   u:object_r:vaultkeeper_efs_file:s0
+/dev/socket/vaultkeeper(/.*)?   u:object_r:vaultkeeper_socket:s0
+
+/vendor/bin/vaultkeeperd	u:object_r:vaultkeeperd_exec:s0
+/vendor/bin/vendor\.samsung\.hardware\.security\.vaultkeeper@2\.0-service      u:object_r:vaultkeeperd_exec:s0

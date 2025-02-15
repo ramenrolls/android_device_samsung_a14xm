@@ -50,3 +50,6 @@ vendor.samsung.hardware.radio.channel::ISehChannel          u:object_r:hal_telep
 vendor.mediatek.hardware.mtkradioex::IMtkRadioEx                    u:object_r:mtk_hal_rild_hwservice:s0
 vendor.mediatek.hardware.radio::ISap                                u:object_r:mtk_hal_rild_hwservice:s0
 vendor.mediatek.hardware.radio_op::IRadioOp                         u:object_r:mtk_hal_rild_hwservice:s0
+
+## Vaultkeeper
+vendor.samsung.hardware.security.vaultkeeper::ISehVaultKeeper     u:object_r:hal_vaultkeeper_server_hwservice:s0
