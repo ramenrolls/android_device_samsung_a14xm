@@ -1984,3 +1984,11 @@ vendor/firmware/gt9896s_firmware_6983v01.bin
 vendor/firmware/mp_ili7807s_cw.ini
 vendor/firmware/mp_ili7807s_tianma.ini
 
+
+## testing import for rcs stack
+vendor/bin/volte_rcs_ua
+vendor/bin/volte_clientapi_ua
+vendor/bin/rcs_volte_stack
+vendor/etc/init/volte_rcs_ua.rc
+vendor/etc/init/volte_clientapi_ua.rc
+
