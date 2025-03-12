@@ -1749,6 +1749,8 @@ vendor/lib64/hw/power.default.so
 system/bin/lmkd
 
 ## Thermal
+vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
+vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/bin/thermal
 vendor/bin/thermal_manager
 vendor/bin/thermalloadalgod

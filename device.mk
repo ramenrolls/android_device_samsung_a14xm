@@ -307,7 +307,7 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Thermal
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     android.hardware.thermal-service.mediatek
 
 PRODUCT_COPY_FILES += \
