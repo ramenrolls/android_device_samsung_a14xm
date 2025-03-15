@@ -144,8 +144,8 @@ PRODUCT_PACKAGES += \
 
 # Dynamic libs needed by `mnld` and `mtk_agpsd`
 PRODUCT_PACKAGES += \
-    libcurl.vendor
-    libssl.vendor
+    libcurl.vendor \
+    libssl.vendor \
     libexpat.vendor
 
 PRODUCT_PACKAGES += \
@@ -156,7 +156,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 
 ## Health HALs
 PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
+    vendor.lineage.health-service.default \
     android.hardware.health@2.1.vendor
 
 ## IMS
@@ -304,7 +304,14 @@ PRODUCT_PACKAGES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/mediatek/libmtkperf_client \
+    hardware/google/interfaces \
+    hardware/google/pixel \
+    hardware/mediatek \
+    hardware/samsung
+    
 
 # Thermal
 # PRODUCT_PACKAGES += \

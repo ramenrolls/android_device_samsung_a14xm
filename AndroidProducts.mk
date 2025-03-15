@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_a14xm.mk
+    $(LOCAL_DIR)/lineage_a14xm.mk

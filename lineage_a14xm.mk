@@ -11,9 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/a14xm/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_a14xm
+PRODUCT_NAME := lineage_a14xm
 PRODUCT_DEVICE := a14xm
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BRAND := Samsung
